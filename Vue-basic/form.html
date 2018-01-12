@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <script src="https://unpkg.com/vue"></script>
+
+    <title>表单</title>
+
+</head>
+<body>
+
+<div id="app">
+
+    <input v-model="msg" placeholder="edit msg">
+    <p>
+        msg is：{{msg}}
+    </p>
+
+    <input v-model.lazy="lazy_msg">
+    <p>
+        lazy_msg:{{lazy_msg}}
+    </p>
+
+    <textarea v-model="multiline_msg"></textarea>
+    <p>
+        multiline msg：{{multiline_msg}}
+    </p>
+
+    <div>
+
+        <input type="checkbox" id="c_1" value="c_1" v-model="checkedList">
+        <label for="c_1">c_1</label>
+        <input type="checkbox" id="c_2" value="c_2" v-model="checkedList">
+        <label for="c_2">c_2</label>
+        <input type="checkbox" id="c_3" value="c_3" v-model="checkedList">
+        <label for="c_3">c_3</label>
+
+
+        <p>checkedList:{{checkedList}}</p>
+
+    </div>
+
+    <input type="checkbox" v-model="toggle" true-value="yes" false-value="no">
+    <p>checkbox value:{{toggle}}</p>
+
+    <!--<input type="radio" v-model="radio_toggle" true-value="yes" false-value="no">-->
+    <!--<p>radio toggle value:{{radio_toggle}}</p>-->
+
+    <input type="radio" v-model="pick" :value="a">
+    <input type="radio" v-model="pick" :value="b">
+    <p>radio value:{{pick}}</p>
+
+    <input v-model.number="age" type="number">
+    <p>
+        number:{{age}}
+    </p>
+
+    <input v-model.trim="trim_msg">
+    <p>
+        trim:{{trim_msg}}
+    </p>
+
+</div>
+
+<script>
+
+    const app = new Vue({
+        el: "#app",
+        data: {
+            msg: "",                    //当行文本
+            multiline_msg: "",          //多行文本
+            check: true,
+            checkedList: [],
+            pick: "",
+            a: "this is a",
+            b: "this is b",
+            toggle: "yes",
+            radio_toggle: "yes",
+            lazy_msg: "aa",
+            age: 12,
+            trim_msg: ''
+        },
+        watch: {}
+    });
+
+</script>
+
+</body>
+</html>

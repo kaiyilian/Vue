@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <script src="https://unpkg.com/vue"></script>
+
+    <title>自定义指令</title>
+</head>
+<body>
+
+<div id="app">
+    <input v-focus>
+
+    <div v-demo:foo.a.b="msg"></div>
+</div>
+<script>
+
+    new Vue({
+        el: "#app",
+        data: {
+            msg: "Hello"
+        },
+        methods: {},
+        computed: {},
+        components: {},
+        directives: {
+            focus: {
+                inserted: function (el) {
+                    // debugger
+                    el.focus();
+                    console.log(el);
+                }
+            },
+            demo: {
+                inserted: function () {
+                    debugger
+
+                },
+                bind: function (el, binding, vnode) {
+                    debugger;
+                    let s = JSON.stringify;
+
+
+                },
+                update: function () {
+
+                }
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

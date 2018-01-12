@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<script src="https://unpkg.com/vue"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <title>组件</title>
+</head>
+<body>
+
+<div id="app">
+    <b>Prop 使用：</b>
+    <br><br>
+
+    <my-component></my-component>
+
+    <my-component-1></my-component-1>
+
+    <my-component-2></my-component-2>
+
+    <my-component-3 message="this is my-component-3"></my-component-3>
+
+    <div>
+        <input v-model="parentMsg">
+        <br>
+        <my-component-4 v-bind:message="parentMsg"></my-component-4>
+    </div>
+
+    <my-component-5 v-bind:parent-obj="parentObj"></my-component-5>
+
+    <my-component-6 class="my_6" prop-A="1aaa32" prop-C="a"></my-component-6>
+
+    <table>
+        <!--<my-row></my-row>-->
+        <tr is="my-row"></tr>
+    </table>
+
+
+</div>
+<script>
+
+    Vue.component("my-component", {
+        template: "<div >这是测试的第一个组件，全局注册</div>"
+    });
+
+    let my_component_1 = {
+        template: "<div v-bind:class='{active:isActive}'>这个组件是写在Vue内部的实例，局部注册</div>",
+        data: function () {
+            return {
+                isActive: true
+            }
+        }
+    };
+
+    let my_component_2 = {
+        template: "<button v-on:click='counter+=1'>{{counter}}</button>",
+        data: function () {
+            return {
+                counter: 0
+            }
+        }
+    };
+
+    let my_component_3 = {
+        props: ["message"],
+        template: "<div>{{ message }}</div>",
+    };
+
+    let my_component_4 = {
+        props: ["message"],
+        template: "<div>{{ message }}</div>",
+    };
+
+    let my_component_5 = {
+        props: ["parentObj"],
+        template: "<div>\
+        <div>{{ parentObj.text }}</div>\
+        <div>{{parentObj.name}}</div>\
+        </div>\
+        ",
+    };
+
+    let my_component_6 = {
+        props: {
+            propA: [String, Number],
+            // 必传且是字符串
+            propC: {
+                type: String,
+                required: true
+            },
+            propD: {
+                default: 120
+            },
+            propE: {
+                type: Object,
+                default: function () {
+                    return {message: "这是propE的默认的message"}
+                }
+            }
+        },
+        template: "<div>\
+        <div class='propA'>{{ propA }}</div>\
+        <div class='propC'>{{propC}}</div>\
+        <div class='propD'>{{propD}}</div>\
+        <div class='propE'>{{propE.message}}</div>\
+        </div>\
+        ",
+    };
+
+    const app = new Vue({
+        el: "#app",
+        data: {
+            isActive: true,
+            message: "这是第三个 component - 组件",
+            parentMsg: "哈哈哈",
+            parentObj: {
+                text: "文本",
+                name: "名称",
+            }
+        },
+        components: {
+            "my-component-1": my_component_1,
+            "my-component-2": my_component_2,
+            "my-component-3": my_component_3,
+            "my-component-4": my_component_4,
+            "my-component-5": my_component_5,
+            "my-component-6": my_component_6,
+            "my-row": {
+                template: "<tr>aaaaa</tr>"
+            }
+        }
+    });
+
+
+</script>
+
+<div id="count-event-example">
+    <p><b>自定义绑定事件：</b></p>
+
+    <p>总共的点击次数：{{total}}</p>
+    <button-click v-on:clickevent="clickTotal"></button-click>
+    <button-click v-on:clickevent="clickTotal"></button-click>
+
+</div>
+<script>
+
+    let buttonClick = {
+        template: "<button v-on:click='countAdd'>{{counter}}</button>",
+        data: function () {
+            return {
+                counter: 0
+            }
+        },
+        methods: {
+            countAdd: function () {
+                this.counter += 1;
+                this.$emit("clickevent");
+            }
+        }
+    };
+
+    const countEvent = new Vue({
+        el: "#count-event-example",
+        data: {
+            total: 0
+        },
+        methods: {
+
+            clickTotal: function () {
+                this.total += 1;
+            }
+
+        },
+        components: {
+            "button-click": buttonClick
+        }
+    });
+
+</script>
+
+<div id="slot_use">
+    <p><b>slot的使用：</b></p>
+
+    <my-component-7>
+        <!--<p>这是测试内容，看看能不能出现</p>-->
+    </my-component-7>
+
+    <my-component-8>
+
+        <div>这个是默认的slot显示的</div>
+
+        <div slot="head">这个是指定的slot的name是head，就是在这里</div>
+
+        <div slot="bbb">这个是指定的slot的name是bbb，就是在这里</div>
+
+        <div>这个是默认的slot显示的，第三个，反正随便放</div>
+
+        <div slot="sb">这个是指定的slot的name是sb，就是在这里</div>
+
+        <div>这个是默认的slot显示的，第二个</div>
+
+    </my-component-8>
+
+    <p><b>动态赋值：</b></p>
+    <my-component-9 v-bind:is="currentView"></my-component-9>
+
+    <div class="slot_scope">
+        作用域插槽：
+
+        <child>
+            <template slot-scope="obj">
+                <p>从子组件传过来的值（在下面显示）：</p>
+                <div>{{obj.text}}</div>
+                <div>{{obj.text1}}</div>
+            </template>
+        </child>
+
+    </div>
+
+</div>
+<script>
+    let child = {
+        template: "\
+        <div class='child'>\
+        <slot text='我是子组件'></slot>\
+        <slot text1='我是子组件111'></slot>\
+        </div>\
+        "
+    };
+
+    let my_component_7 = {
+        template: "<div class=\"my_7\">\
+        <h4>我是子组件</h4>\
+        <slot>这个是备用内容，如果外面不传值进来，就显示这个</slot>\
+        </div>"
+    };
+
+    let my_component_8 = {
+        template: "<div class='container'>\
+        <slot name='sb'></slot>\
+        <div class='header'>\
+        这里是头部\
+        <slot name='head'>哈哈，slot默认的内容</slot>\
+        </div>\
+        <slot></slot>\
+        </div>"
+    };
+
+    const slot_use = new Vue({
+        el: "#slot_use",
+        data: {
+            currentView: "my-component-7"
+        },
+        components: {
+            "my-component-7": my_component_7,
+            "my-component-8": my_component_8,
+            "child": child
+        }
+    });
+
+</script>
+
+<div id="demo">
+    <p><b>todoList Demo：</b></p>
+
+    这是添加的input：<input type="text" v-model="name" @keyup.enter="addTodo">
+
+    <ul>
+        <!--<li v-for="item in items">-->
+        <!--{{item.id}} &#45;&#45;&#45;&#45;&#45;&#45; {{item.text}}-->
+        <!--<button @click="del">删除</button>-->
+        <!--</li>-->
+
+        <li is="todo-item" v-for="item in items" :todo="item" @remove="remove">
+
+        </li>
+    </ul>
+
+</div>
+<script>
+
+    let todo_item = {
+        props: {
+            todo: {
+                type: Object,
+                require: true
+            }
+        },
+        template: "<li>\
+        {{todo.id}} ----- {{todo.text}}\
+        <button v-on:click='remove'>删除</button>\
+        </li>",
+        methods: {
+
+            remove: function () {
+
+                this.$emit("remove");
+
+            }
+
+        }
+    };
+
+    const demo = new Vue({
+        el: "#demo",
+        data: {
+            name: "",
+            items: [
+                {
+                    id: 1,
+                    text: "张三"
+                },
+                {
+                    id: 2,
+                    text: "李四"
+                },
+                {
+                    id: 3,
+                    text: "网二"
+                }
+            ],
+            nextTodoId: 4,
+        },
+        methods: {
+
+            addTodo: function () {
+
+                if (!this.name) {
+                    return
+                }
+                this.items.push({
+                    id: this.nextTodoId,
+                    text: this.name
+                });
+
+                this.name = "";
+                this.nextTodoId++;
+
+            },
+
+            remove: function () {
+
+                // console.log(event);
+                let e = event.target; //目标button
+                let node = e.parentNode;//li
+                let nodeCollection = node.parentNode.children; //所有子li的集合,类数组
+                let nodeArr = Array.from(nodeCollection); //把类数组转成数组
+                let index = nodeArr.indexOf(node); //拿到indexlet
+
+                this.items.splice(index, 1);//删除
+
+            }
+
+        },
+        components: {
+            "todo-item": todo_item
+        }
+    });
+
+</script>
+
+<div id="parent">
+    <my-component-10 ref="component"></my-component-10>
+</div>
+<script>
+    const parent = new Vue({
+        el: "#parent",
+        components: {
+            "my-component-10": {
+                template: "<div></div>"
+            }
+        }
+    });
+
+    // parent.$amount("#parent");
+
+    // parent.$refs.component
+
+</script>
+
+<div></div>
+
+</body>
+</html>

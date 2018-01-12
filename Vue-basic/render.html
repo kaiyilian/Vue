@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <script src="https://unpkg.com/vue"></script>
+
+    <title>渲染</title>
+</head>
+<body>
+
+<div id="app">
+    <my-component :level="1">
+
+        <h1 slot="header">
+            About Me
+        </h1>
+
+        <h2 slot="header">
+            number 2
+        </h2>
+
+        <p>Here's some page content, which will be included in vm.$slots.default, because it's not inside a named
+            slot.</p>
+
+        <p slot="footer">
+            Copyright 2016 Evan You
+        </p>
+
+        <p>If I have some content down here, it will also be included in vm.$slots.default.</p>
+
+    </my-component>
+
+    <ele></ele>
+    <elea :show="show"></elea>
+    <elea :show="!show"></elea>
+
+    <div :class="[{aaa:active},t?'bbb':'ccc']">
+        <el-input :value="name" @input="changeInput"></el-input>
+        <div>你的名字是{{name}}</div>
+    </div>
+
+</div>
+<script>
+
+    Vue.component('elea', {
+        render: function (createElement) {
+            if (this.show) {
+                return createElement('p', '这个是true');
+            } else {
+                return createElement('p', 'false');
+            }
+        },
+        props: {
+            show: {
+                type: Boolean,
+                default: false
+            }
+        }
+    });
+
+    Vue.component("el-input", {
+        // props: {
+        //     value: {
+        //         type: String
+        //     }
+        // },
+        render: function (createElement) {
+
+            let self = this;
+            return createElement(
+                "input",
+                {
+                    // domProps: {
+                    //     value: this.value
+                    // },
+                    on: {
+                        input: function (event) {
+
+                            self.$emit("input", event.target.value)
+
+                        }
+                    }
+                }
+            )
+
+        }
+    });
+
+    new Vue({
+        el: "#app",
+        data: {
+            show: false,
+            name: "els",
+            active: true,
+            t: true
+        },
+        methods: {
+            changeInput: function (val) {
+
+                this.name = val;
+
+            }
+        },
+        components: {
+            "my-component": {
+                props: {
+                    level: {
+                        type: Number,
+                        required: true,
+                        default: 3,
+                    }
+                },
+                render: function (createElement) {
+
+                    // console.log(this.$slots.header);
+
+                    let dom = createElement(
+                        "div",
+                        [
+                            createElement("header", {
+                                class: {
+                                    active: true
+                                },
+                                style: {
+                                    color: "red"
+                                },
+                                attrs: {
+                                    tt: "测试",
+                                    mm: "测试3"
+                                }
+
+                            }, this.$slots.header),
+                            createElement("main", this.$slots.default),
+                            createElement("footer", this.$slots.footer),
+                        ]
+                    );
+
+                    return dom;
+
+                }
+            },
+            "ele": {
+                render: function (createElement) {
+                    return createElement(
+                        {
+                            template: "<p v-if='false'>aaaa</p><div v-else>bbbb</div>"
+                        }
+                    );//一个HTML标签字符
+                }
+            }
+        }
+    });
+
+    // Vue.config.productionTip = false;
+
+
+</script>
+
+</body>
+</html>

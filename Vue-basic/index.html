@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <!--<script src="jquery-2.1.1.min.js"></script>-->
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+<!--<input type="text" id="search" onkeypress="checkSearch()" maxlength="4">-->
+
+<div id="app_1">
+
+    <!--<input type="text" v-model="">-->
+
+    <div>{{rawHtml }}</div>
+    <div v-html="rawHtml"></div>
+
+    <button v-bind:disabled="isButtonDisabled">Button</button>
+
+    <div>正序：{{msg}}</div>
+    <div>倒序：{{reverseMsg}}</div>
+
+    <div>Date Now：{{get_Date()}}</div>
+
+    <div v-bind:class="{active:isShowActive}">绑定class</div>
+    <div v-bind:class="bindClass">绑定class --- bindClass</div>
+
+    <div v-if="type==='A'">
+        A
+    </div>
+    <div v-else-if="type==='B'">
+        B
+    </div>
+    <div v-else>
+        Not A/B
+    </div>
+
+    <div class="list">
+        <div class="item" v-for="(item,index) of items">
+            {{item.name+"-----"+index}}
+        </div>
+    </div>
+
+    <div v-for="(value, key, index) of object">
+        {{ index }}. {{ key }}: {{ value }}
+    </div>
+
+    <ul>
+        <template v-for="item in items">
+            <li>{{ item.name }}</li>
+            <li class="divider"></li>
+        </template>
+    </ul>
+
+</div>
+
+<script>
+
+    let app_1 = new Vue({
+        el: "#app_1",
+        data() {
+            return {
+                msg: "我是正序的",
+                rawHtml: "<b style='color:red;'>粗体，红色</b>",
+                isButtonDisabled: true,
+                isShowActive: true,
+                bindClass: {
+                    a: true,
+                    b: true,
+                    c: false
+                },
+                type: "C",
+                items: [
+                    {
+                        id: 1,
+                        name: "张三"
+                    },
+                    {
+                        id: 2,
+                        name: "李四"
+                    },
+                    {
+                        id: 3,
+                        name: "网二"
+                    }
+                ],
+                object: {
+                    firstName: 'John',
+                    lastName: 'Doe',
+                    age: 30
+                }
+            }
+        },
+        computed: {
+
+            //将msg属性反转
+            reverseMsg: {
+                get: function () {
+                    return this.msg.split('').reverse().join('');
+                }
+            }
+
+        },
+        methods: {
+
+            //获取当前时间
+            get_Date: function () {
+                return new Date().toLocaleString();
+            }
+
+        }
+    });
+
+    app_1.object = Object.assign({}, app_1.object, {
+        age: 27,
+        favoriteColor: 'Vue Green'
+    });
+
+</script>
+
+<script>
+
+    // $(function () {
+    //
+    //     var str = "My blog name is Benjamin-专注前端开发和用户体验",
+    //         substr = "Benjamin";
+    //
+    //     function isContains(str, substr) {
+    //         return str.indexOf(substr) >= 0;
+    //     }
+    //
+    //     console.log(isContains(str, substr));
+    //
+    // });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <script src="https://unpkg.com/vue"></script>
+
+    <title>事件处理</title>
+
+</head>
+<body>
+
+
+<div id="app">
+
+    <!--<button>{{greet()}}</button>-->
+
+    <div v-on:click.self="outClick($event)">
+        <button @click.stop="btnClick($event)">button</button>
+
+
+        <input @keyup.enter="enter()" placeholder="enter">
+        <input @keyup.delete="del" placeholder="delete">
+        <input @keyup.left="left()" placeholder="left">
+
+        <input @click.ctrl="clickCtrl" placeholder="Ctrl + Click">
+
+    </div>
+
+</div>
+
+<script>
+
+    const app = new Vue({
+
+        el: "#app",
+        data: {
+            name: "test"
+        },
+        methods: {
+
+            btnClick: function (event) {
+                // alert(this.name);
+
+                alert(event.target.tagName);
+                // return this.name;
+            },
+
+            outClick: function (event) {
+                alert(event.target.tagName);
+            },
+
+            enter: function (self) {
+                alert("enter");
+                alert(event.key);
+
+                new Promise(function (resolve, reject) {
+                    alert(self.val())
+                })
+                    .then((value) => {
+                        console.log(value)
+                    })
+                    .catch((err) => {
+                        // debugger
+                        console.log(err.message);
+                        // console.log(err.stack);
+                    });
+
+            },
+
+            del: function () {
+                alert("delete");
+            },
+
+            left: function () {
+                alert(event.key);
+            },
+
+            clickCtrl: function () {
+                alert(123)
+            }
+
+        }
+
+    });
+
+</script>
+
+</body>
+</html>

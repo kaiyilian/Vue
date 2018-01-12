@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="https://unpkg.com/vue"></script>
+
+
+<div id="app-1">{{message}}</div>
+
+<div id="app-6">
+    <p>{{ message }}</p>
+    <input v-model="message">
+</div>
+
+<div id="app-7">
+    <ol>
+        <!--
+          现在我们为每个 todo-item 提供待办项对象
+          待办项对象是变量，即其内容可以是动态的。
+          我们也需要为每个组件提供一个“key”，晚些时候我们会做个解释。
+        -->
+        <todo-item
+                v-for="item in groceryList"
+                v-bind:todo="item"
+                v-bind:key="item.id">
+        </todo-item>
+
+    </ol>
+</div>
+
+<div id="app-8">
+    <app-nav></app-nav>
+    <!--<app-view>-->
+    <!--<app-sidebar></app-sidebar>-->
+    <!--<app-content></app-content>-->
+    <!--</app-view>-->
+</div>
+
+<div id="app-9">
+    <p>Original message: "{{ message }}"</p>
+    <p>Computed reversed message: "{{ reversedMessage }}"</p>
+    <p>Computed reversed message: "{{ reversedMessage1() }}"</p>
+</div>
+
+<div id="app-10">{{ fullName }}</div>
+<div id="app-11">{{ fullName }}</div>
+<div id="app-12">{{ fullName }}</div>
+
+<div id="app-13" v-bind:class="[isActive ? activeClass : '', errorClass]">
+    aaaaaa
+</div>
+
+<ul id="app-14" class="demo">
+    <li v-for="value in object">
+        {{ value }}
+    </li>
+</ul>
+
+<ul id="app-15">
+    <li v-for="(item, index) in items">
+        {{ index }} - {{ item.message }}
+        <!--{{item}}-->
+    </li>
+</ul>
+
+<ul id="app-16">
+    <li v-for="(value, key) in object">
+        {{ key }} - {{ value }}
+    </li>
+    <span v-for="n in 10">{{ n }} </span>
+</ul>
+
+<div id="app-17">
+    <div v-on:click="showInfo('hi')">
+        <button v-on:click.stop.once="doThis('fdsafasdfa')">
+            Submit
+        </button>
+    </div>
+    <input v-on:keyup.13="submit()">
+</div>
+
+<div id="app-18">
+    <select v-model="selected">
+        <option value="">请选择</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+    </select>
+    <span>Selected: {{ selected }}</span>
+
+    <br>
+
+    <input type="checkbox" v-model="toggle"
+           v-bind:true-value="a"
+           v-bind:false-value="b"
+    >
+    <span>
+      toggle:{{toggle}}
+        <br>
+      a:{{a}}
+        <br>
+      b:{{b}}
+    </span>
+
+    <br>
+
+    <input v-model.number="age" type="number">
+
+    <!--<input type="checkbox" id="checkbox" v-model="checked">-->
+    <!--<label for="checkbox">{{ checked }}</label>-->
+
+</div>
+
+<div id="app-19"></div>
+
+
+<script src="vue.js"></script>
+
+</body>
+</html>
