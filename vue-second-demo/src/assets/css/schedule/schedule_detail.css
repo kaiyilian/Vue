@@ -1,0 +1,340 @@
+/* 启用/禁用按钮 */
+
+.togglebutton {
+    /*margin: 0;*/
+    float: left;
+    padding: 0;
+    line-height: 34px;
+    /*width: 60px;*/
+    margin: 5px 0 5px 0;
+}
+
+.togglebutton label {
+    margin: 0;
+}
+
+.togglebutton label input[type=checkbox]:first-child {
+    margin: 0;
+}
+
+.togglebutton label .toggle, .togglebutton label input[type="checkbox][disabled"]:first-child + .toggle {
+    width: 44px;
+    height: 25px;
+    margin: 0;
+    display: block;
+}
+
+.togglebutton label .toggle:after {
+    width: 26px;
+    height: 26px;
+    left: -1px;
+    top: -1px;
+    display: block;
+}
+
+.togglebutton label input[type=checkbox]:first-child:checked + .toggle:after {
+    background-color: #fff;
+    left: 19px;
+    display: block;
+}
+
+.togglebutton label input[type=checkbox]:first-child:checked + .toggle {
+    background-color: #00D800;
+    float: left;
+    display: block;
+}
+
+.togglebutton label .toggle, .togglebutton label input[type="checkbox][disabled"]:first-child + .toggle {
+    background-color: #ff6600;
+    display: block;
+}
+
+/* 选择 */
+
+.schedule_detail_container .row .choose_item,
+.schedule_detail_container .row .choose_row {
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin: 10px 8px 10px 3px;
+    cursor: pointer;
+}
+
+/* 说明图标 */
+
+.icon_msg {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-top: 9px;
+}
+
+.tooltip .tooltip-inner {
+    width: 200px;
+    text-align: left;
+    line-height: 20px !important;
+    font-size: 12px !important;
+}
+
+.schedule_detail_container .row .schedule_time .icon_msg {
+    margin-top: -4px;
+}
+
+.schedule_detail_container .row .rest_time .icon_msg {
+    margin-top: -2px;
+}
+
+.schedule_detail_container .row .absenteeism .icon_msg {
+    margin-left: 8px;
+}
+
+.schedule_detail_container .row .overTime_set .icon_msg {
+    margin-left: 8px;
+}
+
+.schedule_detail_container .row .work_time .icon_msg {
+    margin-top: 0;
+}
+
+/* 班次管理 container */
+
+.schedule_detail_container .content {
+    font-size: 14px;
+    height: 100%;
+    overflow: auto;
+}
+
+.schedule_detail_container .content > .row {
+    margin: 0 !important;
+    padding: 8px 0;
+}
+
+.schedule_detail_container .content .row .txtInfo {
+    margin: 3px 0;
+    padding: 0;
+}
+
+.schedule_detail_container .content .row .schedule_color {
+}
+
+.schedule_detail_container .content .row .schedule_color .item {
+    width: 34px;
+    height: 34px;
+    float: left;
+}
+
+.schedule_detail_container .content .row .schedule_color .item.active i {
+    color: #fff;
+    margin: 9px;
+}
+
+/* 打卡时间 */
+
+.schedule_detail_container .row .schedule_time {
+
+}
+
+.schedule_detail_container .row .schedule_time .item {
+    float: left;
+    padding-right: 10px;
+}
+
+.schedule_detail_container .row .schedule_time .item input {
+    min-width: 70px;
+    text-align: center;
+}
+
+.schedule_detail_container .row .schedule_time .item .hour {
+    border-right: 0;
+}
+
+.schedule_detail_container .row .schedule_time .item .minute {
+    border-left: 0;
+}
+
+.schedule_detail_container .row .schedule_time .end_time_next_day {
+    /*cursor: pointer;*/
+    line-height: 34px;
+}
+
+.schedule_detail_container .row .schedule_time .middle_time {
+    margin-top: 10px;
+}
+
+.schedule_detail_container .row .schedule_time .middle_time_next_day {
+    margin-top: 10px;
+    /*cursor: pointer;*/
+    line-height: 34px;
+}
+
+/* 有效打卡 */
+
+.schedule_detail_container .row .schedule_valid_time {
+
+}
+
+.schedule_detail_container .row .schedule_valid_time .item {
+    float: left;
+    padding-right: 10px;
+}
+
+.schedule_detail_container .row .schedule_valid_time .item input {
+    text-align: center;
+}
+
+/* 人性打卡 */
+
+.schedule_detail_container .row .punch_card {
+
+}
+
+.schedule_detail_container .row .punch_card .row {
+    padding: 0;
+}
+
+.schedule_detail_container .row .punch_card .row .item {
+    float: left;
+    padding-right: 10px;
+}
+
+.schedule_detail_container .row .punch_card .row .item input {
+    text-align: center;
+}
+
+/* 休息时间 */
+
+.schedule_detail_container .row .rest_time {
+    line-height: 34px;
+}
+
+.schedule_detail_container .row .rest_time .row {
+    padding: 0;
+}
+
+.schedule_detail_container .row .rest_time .row:first-child {
+    margin-bottom: 10px !important;
+}
+
+.schedule_detail_container .row .rest_time .row .item {
+    float: left;
+    padding-right: 5px;
+}
+
+.schedule_detail_container .row .rest_time .row .item input {
+    /*min-width: 70px;*/
+    text-align: center;
+}
+
+.schedule_detail_container .row .rest_time .row .item .hour {
+    border-right: 0;
+}
+
+.schedule_detail_container .row .rest_time .row .item .minute {
+    border-left: 0;
+}
+
+.schedule_detail_container .row .rest_time .row .next_day {
+    padding: 0;
+}
+
+.schedule_detail_container .row .rest_time .row .is_normal_work_time {
+    margin-top: 10px;
+    padding: 0;
+    /*cursor: pointer;*/
+}
+
+/* 旷工设置 */
+
+.schedule_detail_container .row .absenteeism {
+}
+
+.schedule_detail_container .row .absenteeism .row {
+    padding: 0;
+    line-height: 34px;
+}
+
+.schedule_detail_container .row .absenteeism .row .item {
+    float: left;
+}
+
+.schedule_detail_container .row .absenteeism .row .miss_card {
+    padding: 0;
+}
+
+.schedule_detail_container .row .absenteeism .row .miss_card {
+}
+
+.schedule_detail_container .row .absenteeism .row .miss_card .row {
+    /*margin: 0 0 10px;*/
+}
+
+.schedule_detail_container .row .absenteeism .row .miss_card .row .choose_container {
+    padding: 0;
+    /*cursor: pointer;*/
+}
+
+/* 加班设置 */
+
+.schedule_detail_container .row .overTime_set {
+}
+
+.schedule_detail_container .row .overTime_set {
+    padding: 0;
+    line-height: 34px;
+}
+
+.schedule_detail_container .row .overTime_set .item {
+    float: left;
+    padding-right: 12px;
+}
+
+.schedule_detail_container .row .overTime_set .txt {
+    color: #999;
+}
+
+.schedule_detail_container .row .overTime_set .default {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 34px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* 上班工时 */
+
+.schedule_detail_container .row .work_time {
+    line-height: 34px;
+}
+
+.schedule_detail_container .row .work_time .row {
+}
+
+.schedule_detail_container .row .work_time .row .choose_item {
+    /*margin-right: 5px;*/
+}
+
+.schedule_detail_container .row .work_time .row span {
+    display: block;
+    float: left;
+}
+
+.schedule_detail_container .row .work_time .row .item {
+    float: left;
+    margin-right: 10px;
+}
+
+/*加班工时*/
+
+.schedule_detail_container .row .overTime_type_container {
+}
+
+.schedule_detail_container .row .overTime_type_container .overTime_type {
+    width: 25%;
+    margin: 3px 0;
+}
+
+.schedule_detail_container .row .overTime_type_container .icon_msg {
+    margin: 13px 10px;
+}

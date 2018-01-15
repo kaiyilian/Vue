@@ -1,0 +1,19 @@
+/* 重新发送 弹框 */
+
+.contract_resend_modal .modal-body .row {
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.contract_resend_modal .modal-body .row div {
+    display: inline-block;
+    color: #ff6600;
+}
+
+.contract_resend_modal .modal-body .row div .effective_date {
+    display: inline-block;
+    float: none;
+}

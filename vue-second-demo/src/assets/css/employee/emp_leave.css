@@ -1,0 +1,31 @@
+
+.emp_leave_container .content table tbody td > div {
+    margin: 0 auto;
+}
+
+.emp_leave_container .content table tbody .emp_work_sn > div,
+.emp_leave_container .content table tbody .emp_name > div,
+.emp_leave_container .content table tbody .department_name > div,
+.emp_leave_container .content table tbody .position_name > div,
+.emp_leave_container .content table tbody .work_shift_name > div,
+.emp_leave_container .content table tbody .work_line_name > div,
+.emp_leave_container .content table tbody .emp_phone > div {
+    width: 70px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden; /* 超出部分不显示 */
+}
+
+.emp_leave_container .content table tbody .emp_idCard > div {
+    width: 110px;
+}
+
+.emp_leave_container .content table tbody .check_in_time > div,
+.emp_leave_container .content table tbody .check_out_time > div {
+    width: 80px;
+}
+
+.emp_leave_container .content table tbody td.operate > div {
+    width: 130px;
+}

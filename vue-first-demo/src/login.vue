@@ -1,5 +1,25 @@
 <template>
-  <h1 class="aaa">{{msg}}</h1>
+
+
+  <div>
+    <h1 class="aaa">{{msg}}</h1>
+
+    <div class="middle-box text-center loginscreen  animated fadeInDown login_bg">
+
+
+
+      <div class="col-xs-12">
+hahahsd
+
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
 </template>
 
 <script>

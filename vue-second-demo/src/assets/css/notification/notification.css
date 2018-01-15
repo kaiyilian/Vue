@@ -1,0 +1,37 @@
+
+.msg_none{
+    text-align: center;
+    font-size:20px;
+    color:#666;
+    line-height:100px;
+}
+.notification_container .notification_list {
+    padding: 10px 0;
+}
+
+.notification_container .notification_list .item {
+    margin: 0 !important;
+    font-size: 13px;
+}
+
+.notification_container .notification_list .item:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.notification_container .notification_list .item .title {
+    text-align: center;
+}
+
+.notification_container .notification_list .item.unRead .title {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.notification_container .notification_list .item .title .contract_no {
+    display: inline-block;
+}
+
+.notification_container .notification_list .item .time {
+    color: #666;
+}

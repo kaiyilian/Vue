@@ -12,7 +12,7 @@ Vue.config.devtools = true
 new Vue({
   el: '#app',
   router,
-  template: '<App/>',
+  template: '<Login/>',
   components: {
     App,
     Login

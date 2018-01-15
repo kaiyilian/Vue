@@ -1,0 +1,16 @@
+/**
+ * Created by Administrator on 2016/7/13.
+ 合同到期
+ */
+
+.contract_expire_renew_modal .modal-body .row {
+	line-height: 34px;
+}
+
+.contract_expire_container .content table tbody tr.item .operate {
+	width: 60px;
+}
+
+.contract_expire_container .content table tbody tr.item .operate .btn {
+	margin-left: 5px;
+}

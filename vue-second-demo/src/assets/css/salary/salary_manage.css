@@ -1,0 +1,228 @@
+/* bootstrap 时间 插件 */
+
+.datetimepicker thead {
+	background-color: #1c84c6;
+	color: #fff;
+}
+
+.datetimepicker thead tr:first-child th:hover, .datetimepicker tfoot th:hover {
+	background-color: #1c84c6;
+}
+
+.datetimepicker thead tr:first-child th, .datetimepicker tfoot th {
+	border-radius: 0;
+}
+
+.datetimepicker table tr td span {
+	width: 50%;
+	margin: 0;
+	text-align: center;
+	line-height: 20px;
+	height: 20px;
+	font-size: 12px;
+}
+
+.datetimepicker table tr td span.active.active {
+	background-color: #1c84c6;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background-image: inherit;
+}
+
+/* 薪资管理 */
+
+.salary_manage_container .content .search_container .item .month {
+	position: relative;
+	line-height: 20px;
+	color: rgba(0, 0, 0, 0.50);
+	cursor: pointer;
+}
+
+.salary_manage_container .content .search_container .item .add-on {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	width: 34px;
+	height: 100%;
+	/*background-color: red;*/
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-top: none;
+	border-bottom: none;
+	z-index: 9;
+	line-height: 34px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.salary_manage_container .content .search_container .item .add-on img {
+	width: 16px;
+	height: 16px;
+	margin: 9px;
+}
+
+.salary_manage_container .content table tbody tr.item .operate {
+	width: 80px;
+	padding: 0 5px;
+}
+
+/* 导入薪资 弹框 */
+
+.salary_import_modal .modal-body {
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+.salary_import_modal .modal-body .step_1 {
+	padding-top: 20px;
+}
+
+.salary_import_modal .modal-body .step_1 .upload_container {
+	width: 650px;
+	height:122px;
+	border: 1px dashed #a4a4a4;
+	border-radius: 5px;
+	text-align: center;
+	padding: 15px 0 8px;
+	margin: 10px auto 20px;
+}
+
+.salary_import_modal .modal-body .step_1 .upload_container .btn_upload {
+	position: relative;
+	width: 100px;
+	background-color: #ff6600;
+	color: #fff;
+	border-radius: 3px;
+	text-align: right;
+}
+
+.salary_import_modal .modal-body .step_1 .upload_container .btn_upload i {
+	position: absolute;
+	left: 10px;
+	top: 8px;
+	color: #fff;
+}
+
+.salary_import_modal .modal-body .step_1 .upload_container .txt {
+	font-size: 16px;
+	line-height: 36px;
+	color: #999999;
+}
+
+.salary_import_modal .modal-body .step_1 .info_prompt {
+	position: relative;
+	width: 100%;
+	padding: 13px 10% 18px;
+	background-color: #f3f3f4;
+}
+
+.salary_import_modal .modal-body .step_1 .info_prompt .txt {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.salary_import_modal .modal-body .step_1 .info_prompt .txt_1 {
+	position: relative;
+	width: 100%;
+	line-height: 26px;
+	font-size: 12px;
+	color: #999999;
+}
+
+.salary_import_modal .modal-body .step_1 .info_prompt .txt_1 span {
+	float: none;
+	display: inline-block;
+	/*cursor: pointer;*/
+}
+
+.salary_import_modal .modal-body .step_1 .info_prompt .txt_1 .template_down:hover {
+	cursor: pointer;
+}
+
+.salary_import_modal .modal-body .step_2 {
+	display: none;
+	padding: 18px 0 8px;
+}
+
+.salary_import_modal .modal-body .step_2 .row {
+	line-height: 30px;
+	padding: 0 20px;
+}
+
+.salary_import_modal .modal-body .step_2 .row .icon {
+	width: 14px;
+	height: 14px;
+	margin: 8px;
+}
+
+.salary_import_modal .modal-body .step_2 .table_container {
+	width: 100%;
+	overflow: auto;
+	max-height: 250px;
+	margin-bottom: 8px;
+}
+
+.salary_import_modal .modal-body .step_2 .table_container table {
+	font-size: 13px;
+	text-align: center;
+	color: #333;
+	margin: 0;
+}
+
+.salary_import_modal .modal-body .step_2 .table_container table thead {
+	font-weight: bold;
+}
+
+.salary_import_modal .modal-body .step_2 .table_container table tbody tr.is_release {
+	background-color: #fcfc35;
+}
+
+.salary_import_modal .modal-body .step_2 .table_container table tbody tr.is_error {
+	background-color: #fe8d8f;
+}
+
+.salary_import_modal .modal-body .step_2 .table_container table tbody td {
+	position: relative;
+}
+
+.salary_import_modal .modal-body .step_2 .table_container table tbody td span {
+	width: 100%;
+}
+
+.salary_import_modal .modal-body .step_2 .table_container table tbody td.isError {
+	color: red;
+}
+
+.salary_import_modal .modal-body .step_2 .table_container table tbody td.isError img {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	right: 3px;
+	top: 3px;
+}
+
+.salary_import_modal .modal-body .step_2 .table_container table tbody td .phone_msg {
+	color: #2273b4;
+}
+
+.salary_import_modal .modal-body .step_2 .prompt {
+	line-height: 40px;
+	text-align: center;
+}
+
+.salary_import_modal .modal-body .step_2 .prompt span {
+	display: inline;
+	float: none;
+}
+
+.salary_import_modal .modal-footer {
+	text-align: center;
+}
+
+.salary_import_modal .modal-footer button {
+	/*display: inline;*/
+	/*float: none;*/
+}

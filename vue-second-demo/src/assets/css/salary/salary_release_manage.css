@@ -1,0 +1,64 @@
+
+.salary_release_manage_container .content .search_container .item .month {
+	position: relative;
+	line-height: 20px;
+	color: rgba(0, 0, 0, 0.50);
+	cursor: pointer;
+}
+
+.salary_release_manage_container .content .search_container .item .add-on {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	width: 34px;
+	height: 100%;
+	/*background-color: red;*/
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	border-top: none;
+	border-bottom: none;
+	z-index: 9;
+	line-height: 34px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.salary_release_manage_container .content .search_container .item .add-on img {
+	width: 16px;
+	height: 16px;
+	margin: 9px;
+}
+
+.salary_release_manage_container .content table tbody tr.item .operate {
+	width: 80px;
+}
+
+.datetimepicker thead {
+	background-color: #1c84c6;
+	color: #fff;
+}
+
+.datetimepicker thead tr:first-child th:hover, .datetimepicker tfoot th:hover {
+	background-color: #1c84c6;
+}
+
+.datetimepicker thead tr:first-child th, .datetimepicker tfoot th {
+	border-radius: 0;
+}
+
+.datetimepicker table tr td span {
+	width: 50%;
+	margin: 0;
+	text-align: center;
+	line-height: 20px;
+	height: 20px;
+	font-size: 12px;
+}
+
+.datetimepicker table tr td span.active.active {
+	background-color: #1c84c6;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background-image: inherit;
+}

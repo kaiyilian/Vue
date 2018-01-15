@@ -1,0 +1,553 @@
+
+section.salary_create_container {
+    /*height: 100%;*/
+}
+
+section.salary_create_container .step_list {
+    width: 100%;
+    overflow-y: auto;
+    /*height: calc(100% - 46px);*/
+}
+
+section.salary_create_container .step_1 {
+    text-align: center;
+    padding-top: 30px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+section.salary_create_container .step_1 .tl {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+section.salary_create_container .step_1 .t_preview {
+    line-height: 25px;
+    color: #1490d2;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0 auto;
+    width: 100px;
+}
+
+section.salary_create_container .step_1 .salary_info_container {
+    margin: 40px 0 20px;
+}
+
+section.salary_create_container .step_1 .salary_info_container .row {
+    line-height: 30px;
+}
+
+section.salary_create_container .step_1 .salary_info_container .row > div {
+    display: inline-block;
+    text-align: left;
+}
+
+section.salary_create_container .step_1 .salary_info_container .row .year_month_container {
+    width: 210px;
+}
+
+section.salary_create_container .step_1 .salary_info_container .row:not(:first-child) {
+    margin-top: 10px;
+}
+
+section.salary_create_container .step_1 .salary_info_container .row input {
+    position: relative;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    /*border-radius: 3px;*/
+    font-size: 13px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 28px;
+}
+
+section.salary_create_container .step_1 .salary_info_container .row .salary_name {
+    position: relative;
+    padding: 0 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    height: 30px;
+    width: 210px;
+}
+
+section.salary_create_container .step_1 .salary_info_container .row .salary_corp_name {
+    position: relative;
+    padding: 0 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    height: 30px;
+    width: 210px;
+}
+
+section.salary_create_container .step_1 .salary_info_container .salary_corp_name_container {
+    display: none;
+}
+
+section.salary_create_container .step_1 .btn_list {
+    margin: 15px 0;
+}
+
+section.salary_create_container .step_1 .btn_list .btn_upload {
+    width: 150px;
+    line-height: 26px;
+    font-size: 15px;
+    box-shadow: 0 5px 6px 0 rgba(255, 118, 18, 0.7);
+}
+
+section.salary_create_container .step_1 .btn_list .btn_replace {
+    color: #1490d2;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+section.salary_create_container .step_1 .info_prompt {
+    width: 100%;
+    padding: 0 120px;
+    margin-top: 40px;
+}
+
+section.salary_create_container .step_1 .info_prompt .txt {
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: left;
+}
+
+section.salary_create_container .step_1 .info_prompt .txt_1 {
+    /*font-size: 12px;*/
+    line-height: 24px;
+}
+
+section.salary_create_container .step_1 .info_prompt ul {
+    margin: 0;
+    padding-left: 20px;
+    line-height: 24px;
+    display: inline-block;
+}
+
+section.salary_create_container .step_1 .info_prompt ul li {
+    float: left;
+    margin-right: 60px;
+}
+
+section.salary_create_container .step_2 {
+    width: 100%;
+    /*height: 100%;*/
+    margin: 0 auto;
+}
+
+section.salary_create_container .step_2 .salary_excel_info {
+    width: 96%;
+    position: relative;
+    margin: 0 2%;
+    padding: 10px 0 20px;
+    float: left;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .file_name {
+    line-height: 50px;
+    padding-left: 30px;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .table_container {
+
+}
+
+section.salary_create_container .step_2 .salary_excel_info #tb_salary {
+    font-size: 14px;
+}
+
+section.salary_create_container .step_2 .salary_excel_info #tb_salary tbody tr td div {
+    width: 100px;
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+section.salary_create_container .step_2 .salary_excel_info
+.fixed-table-header thead th .th-inner, .fixed-table-container tbody td .th-inner {
+    width: 100px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    /*white-space: inherit;*/
+    font-size: 14px;
+    /*text-overflow: ellipsis;*/
+    /*-o-text-overflow: ellipsis;*/
+    /*overflow: hidden;     !* 超出部分不显示 *!*/
+}
+
+section.salary_create_container .step_2 .salary_excel_info .tl_check_container {
+    font-size: 13px;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .tl_check_container .row {
+    margin: 0;
+    line-height: 30px;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .tl_check_container .row .txt {
+    float: left;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .tl_check_container .row .t_preview {
+    cursor: pointer;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .tl_check_container .item {
+    padding-left: 30px;
+    line-height: 30px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .tl_check_container .item div {
+    float: left;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .tl_check_container .item .cellHeader {
+    width: 60px;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .tl_check_container .item .icon {
+    margin: 8px 10px;
+    width: 25px;
+    height: 14px;
+    text-align: center;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .tl_check_container .item .realCellHeader {
+    width: 80px;
+    text-align: center;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .tl_check_container .item .error_msg {
+    max-width: 500px;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .tl_check_container .item:before {
+    content: "";
+    background: url("../../../image/icon_salary/icon_right.png") no-repeat;
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 2px;
+    top: 8px;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .tl_check_container .item.error:before {
+    background: url("../../../image/icon_salary/icon_error.png") no-repeat;
+
+}
+
+section.salary_create_container .step_2 .salary_excel_info .err_msg_container {
+    margin-top: 20px;
+    font-size: 13px;
+    float: left;
+    width: 100%;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .err_msg_container .txt {
+    float: left;
+    font-weight: bold;
+    margin-right: 40px;
+    line-height: 30px;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .err_msg_container .item {
+    padding-left: 30px;
+    line-height: 30px;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+section.salary_create_container .step_2 .salary_excel_info .err_msg_container .item:before {
+    content: "";
+    background: url("../../../image/icon_salary/icon_err_msg.png") no-repeat;
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 2px;
+    top: 8px;
+}
+
+section.salary_create_container .step_2 .salary_excel_error {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 50px 0 20px;
+    text-align: center;
+}
+
+section.salary_create_container .step_2 .salary_excel_error .tl {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+section.salary_create_container .step_2 .salary_excel_error .tlc {
+    font-size: 12px;
+    color: #888;
+    line-height: 25px;
+}
+
+section.salary_create_container .step_2 .salary_excel_error .btn_prev_upload {
+    margin: 20px 0;
+}
+
+section.salary_create_container .step_2 .salary_excel_error .salary_rule_img {
+    width: 100%;
+    /*margin: 10px auto;*/
+}
+
+section.salary_create_container .step_2 .salary_excel_error .salary_rule_img img {
+    /*width: auto;*/
+    width: 1072px;
+    height: 827px;
+}
+
+section.salary_create_container .step_2 .btn_list {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+section.salary_create_container .step_2 .btn-orange {
+    box-shadow: 0 5px 6px 0 rgba(255, 118, 18, 0.7);
+}
+
+section.salary_create_container .step_2 .btn_list .btn-default {
+    background-color: rgba(200, 200, 200, 1);
+    box-shadow: 0 5px 10px 0 rgba(200, 200, 200, 0.5);
+    color: #fff;
+}
+
+section.salary_create_container .step_2 .btn_list .btn_next {
+    width: 120px;
+    line-height: 26px;
+    font-size: 15px;
+}
+
+section.salary_create_container .step_2 .btn_prev_upload {
+    width: 220px;
+    line-height: 26px;
+    font-size: 15px;
+}
+
+section.salary_create_container .step_3 {
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0 20px;
+}
+
+section.salary_create_container .step_3 .salary_name {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    padding-left: 12px;
+}
+
+section.salary_create_container .step_3 .payroll_info {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    line-height: 36px;
+}
+
+section.salary_create_container .step_3 .payroll_info .left_side {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    border: 1px solid #dedede;
+}
+
+section.salary_create_container .step_3 .payroll_info .left_side .txt {
+    position: relative;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ECECEC;
+}
+
+section.salary_create_container .step_3 .payroll_info .left_side .user_list {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow-y: auto;
+}
+
+section.salary_create_container .step_3 .payroll_info .left_side .user_list .user_item {
+    /*border-top: 1px solid #dedede;*/
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+section.salary_create_container .step_3 .payroll_info .left_side .user_list .user_item.active {
+    border: 1px solid #1490D2;
+}
+
+section.salary_create_container .step_3 .payroll_info .left_side .user_list .user_item .user_phone {
+    line-height: 20px;
+    font-size: 12px;
+    color: #999;
+    padding-left: 12px;
+}
+
+section.salary_create_container .step_3 .payroll_info .right_side {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    border: 1px solid #dedede;
+    border-left: 0;
+}
+
+section.salary_create_container .step_3 .payroll_info .right_side .txt {
+    position: relative;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ECECEC;
+}
+
+section.salary_create_container .step_3 .payroll_info .right_side .salary_detail {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow-y: auto;
+    font-size: 13px;
+}
+
+section.salary_create_container .step_3 .payroll_info .right_side .salary_detail .item {
+    padding: 0 20px;
+    float: left;
+    width: 100%;
+}
+
+section.salary_create_container .step_3 .payroll_info .right_side .salary_detail .item:nth-child(odd) {
+    /*background-color: red;*/
+}
+
+section.salary_create_container .step_3 .payroll_info .right_side .salary_detail .item:nth-child(even) {
+    background-color: #ECECEC;
+}
+
+section.salary_create_container .step_3 .payroll_info .right_side .salary_detail .item .key {
+    float: left;
+    width: 30%;
+}
+
+section.salary_create_container .step_3 .payroll_info .right_side .salary_detail .item .value {
+    float: right;
+    width: 70%;
+    word-break: break-all;
+}
+
+section.salary_create_container .step_3 .contact_info {
+    padding: 20px 0;
+}
+
+section.salary_create_container .step_3 .contact_info .row {
+    margin: 0 0 10px 0;
+    /*height: 25px;*/
+}
+
+section.salary_create_container .step_3 .contact_info .row .txt {
+    text-align: center;
+    padding: 0;
+}
+
+section.salary_create_container .step_3 .contact_info .row .txtInfo {
+    border-bottom: 1px solid #dedede;
+}
+
+section.salary_create_container .step_3 .contact_info .row input {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    width: 100%;
+}
+
+section.salary_create_container .step_3 .btn_list {
+    margin-top: 30px;
+}
+
+section.salary_create_container .step_3 .btn_list .btn-orange {
+    box-shadow: 0 5px 6px 0 rgba(255, 118, 18, 0.7);
+}
+
+section.salary_create_container .step_3 .btn_list .btn-default {
+    background-color: rgba(200, 200, 200, 1);
+    box-shadow: 0 5px 10px 0 rgba(200, 200, 200, 0.5);
+    color: #fff;
+}
+
+section.salary_create_container .step_3 .btn_list .btn_send {
+    width: 120px;
+    line-height: 26px;
+    font-size: 15px;
+}
+
+section.salary_create_container .step_3 .btn_list .btn_prev {
+    width: 220px;
+    line-height: 26px;
+    font-size: 15px;
+
+}
+
+section.salary_create_container .step_3 .user_agreement {
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+section.salary_create_container .step_3 .user_agreement .choose_item {
+    display: inline-block;
+}
+
+section.salary_create_container .step_3 .user_agreement img {
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+}
+
+section.salary_create_container .step_3 .user_agreement a {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* 工资单预览 弹框 */
+
+.payroll_preview_modal {
+    overflow-x: scroll !important;
+}
+
+.payroll_preview_modal .modal-dialog {
+    margin-top: 140px;
+    min-width: 1056px;
+    text-align: center;
+}
+
+.payroll_preview_modal .modal-body {
+    padding: 0;
+}
+

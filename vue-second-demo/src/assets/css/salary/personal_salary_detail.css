@@ -1,0 +1,28 @@
+
+.personal_salary_detail_list {
+    /*border: 1px solid rgba(0, 0, 0, 0.10);*/
+    position: relative;
+    /*width: 830px;*/
+    text-align: center;
+    margin: 0 auto;
+}
+
+.personal_salary_detail_list .item {
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
+    border-left: 1px solid rgba(0, 0, 0, 0.10);
+    /*border-right: 1px solid rgba(0, 0, 0, 0.10);*/
+    height: 41px;
+}
+
+.personal_salary_detail_list .item:nth-child(2n+1) {
+    /*border-left: 1px solid rgba(0, 0, 0, 0.10);*/
+    /*border-right: none;*/
+}
+
+.personal_salary_detail_list .item .txtInfo {
+    word-wrap: break-word;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;     /* 超出部分不显示 */
+}

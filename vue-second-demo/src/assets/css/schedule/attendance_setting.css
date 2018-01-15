@@ -1,0 +1,202 @@
+.icon_msg {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+/* 百度地图 */
+
+.tangram-suggestion-main {
+    z-index: 3000;
+}
+
+/* 考勤周期 */
+
+.attendance_setting_container #attendance_cycle .content .table_container table td .btn_operate {
+    /*width:116px;*/
+}
+
+.attendance_setting_container #attendance_cycle .content .table_container table td .btn_operate .btn {
+    margin-right: 8px;
+}
+
+.attendance_setting_container #attendance_cycle .import_container .item .icon-user {
+    background: url("../../../image/icon_emp_prospective/icon_emp_add_hover.png") no-repeat;
+    background-size: contain;
+}
+
+/* 假期设置 */
+
+.attendance_setting_container #holiday_set {
+}
+
+.attendance_setting_container #holiday_set .holiday_type_container {
+    margin-top: 10px;
+}
+
+.attendance_setting_container #holiday_set .holiday_type_container .btn {
+    margin: 5px 0;
+}
+
+.attendance_setting_container #holiday_set .holiday_type_container .holiday_type_list .btn {
+    margin-right: 8px;
+}
+
+/* 加班设置 */
+
+.attendance_setting_container #overTime_set .overTime_type_container {
+    margin-top: 10px;
+}
+
+.attendance_setting_container #overTime_set .overTime_type_container .btn {
+    margin: 5px 0;
+}
+
+.attendance_setting_container #overTime_set .overTime_type_container .overTime_type_list .btn {
+    margin-right: 8px;
+}
+
+/* 打卡 设置 */
+
+.attendance_setting_container #attendance_clock {
+}
+
+.attendance_setting_container #attendance_clock .clock_by_area {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.attendance_setting_container #attendance_clock .clock_by_area .c_txt {
+    position: relative;
+    margin: 5px 0;
+    padding: 0 20px;
+}
+
+.attendance_setting_container #attendance_clock .clock_by_area .c_txt .distance {
+    position: relative;
+    width: 100px;
+    margin: 3px 8px;
+}
+
+.attendance_setting_container #attendance_clock .clock_by_area table tbody .btn_operate .btn {
+    margin-right: 8px;
+}
+
+.attendance_setting_container #attendance_clock .clock_by_wifi .c_txt {
+    position: relative;
+    margin: 5px 0;
+    padding: 0 20px;
+}
+
+.attendance_setting_container #attendance_clock .clock_by_wifi table tbody .btn_operate .btn {
+    margin-right: 8px;
+}
+
+/* 考勤周期 - 弹框 */
+
+.attendance_cycle_modal .modal-body .row {
+    position: relative;
+    color: #999999;
+}
+
+.attendance_cycle_modal .modal-body .row > .col-xs-3 {
+    line-height: 34px;
+}
+
+.attendance_cycle_modal .modal-body .row .workShift_list .workShift_item {
+    position: relative;
+    margin: 1px 8px 1px 0;
+    padding: 0 15px;
+    line-height: 30px;
+    border: 1px dashed #999999;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+
+.attendance_cycle_modal .modal-body .row .workShift_list .workShift_item.active {
+    border: 1px dashed #ff6600;
+    color: #fff;
+    background-color: #ff6600;
+}
+
+.attendance_cycle_modal .modal-body .row .is_next_month {
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.attendance_cycle_modal .modal-body .row .is_next_month img {
+    width: 14px;
+    height: 14px;
+    margin: 13px 8px 13px 0;
+    float: left;
+}
+
+/* 绑定管理员 弹框 */
+
+.bind_manager_modal .modal-body .row {
+    position: relative;
+    color: #999999;
+}
+
+.bind_manager_modal .modal-body .row > .col-xs-3 {
+    line-height: 34px;
+}
+
+/* 办公地点 弹框 */
+
+.clock_area_modal .modal-body {
+}
+
+.clock_area_modal .modal-body #area-map {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.clock_area_modal .modal-body .row {
+}
+
+.clock_area_modal .modal-body .row .col-xs-3 {
+    line-height: 34px;
+}
+
+.clock_area_modal .modal-body .work_shift_container .work_shift_list {
+}
+
+.clock_area_modal .modal-body .work_shift_container .work_shift_list .btn {
+    margin: 2px 6px 2px 0;
+}
+
+.clock_area_modal .modal-body .work_shift_container .btn.active {
+    background-color: #567ec0 !important;
+    border-color: #567ec0 !important;
+}
+
+/* 办公WiFi 弹框 */
+
+.clock_wifi_modal .modal-body {
+}
+
+.clock_wifi_modal .modal-body .row {
+}
+
+.clock_wifi_modal .modal-body .row .col-xs-3 {
+    line-height: 34px;
+}
+
+.clock_wifi_modal .modal-body .work_shift_container .work_shift_list {
+}
+
+.clock_wifi_modal .modal-body .work_shift_container .btn {
+    margin: 2px 6px 2px 0;
+}
+
+.clock_wifi_modal .modal-body .work_shift_container .btn.active {
+    background-color: #567ec0 !important;
+    border-color: #567ec0 !important;
+}

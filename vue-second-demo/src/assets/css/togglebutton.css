@@ -1,0 +1,78 @@
+/*状态属性 滑动*/
+.togglebutton {
+	vertical-align: middle;
+}
+
+.togglebutton, .togglebutton * {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.togglebutton label {
+	font-weight: 400;
+	cursor: pointer;
+}
+
+/*input[type=checkbox] 的样式(隐藏)*/
+.togglebutton label input[type=checkbox]:first-child {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/*被选中后 .toggle的颜色 样式*/
+.togglebutton label input[type=checkbox]:first-child:checked + .toggle {
+	background-color: rgba(0, 149, 135, .5); /*span的颜色*/
+}
+
+.togglebutton label .toggle,
+.togglebutton label input[type="checkbox][disabled"]:first-child + .toggle {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 15px;
+	background-color: rgba(80, 80, 80, .7);
+	border-radius: 15px;
+	margin-right: 10px;
+	-webkit-transition: background .3s ease;
+	transition: background .3s ease;
+	vertical-align: middle;
+}
+
+/*.toggle:after 的默认样式*/
+.togglebutton label .toggle:after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #f1f1f1;
+	border-radius: 20px;
+	position: relative;
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4);
+	left: -5px;
+	top: -2px;
+	-webkit-transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+	transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+}
+
+.togglebutton label input[type="checkbox][disabled"]:first-child + .toggle:after,
+.togglebutton label input[type="checkbox][disabled"]:checked:first-child + .toggle:after {
+	background-color: #bdbdbd;
+}
+
+.togglebutton label input[type=checkbox]:first-child:checked ~ .toggle:active:after {
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba(0, 149, 135, .1);
+}
+
+.togglebutton label input[type=checkbox]:first-child ~ .toggle:active:after,
+.togglebutton label input[type="checkbox][disabled"]:first-child ~ .toggle:active:after {
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .4), 0 0 0 15px rgba(0, 0, 0, .1);
+}
+
+/*被选中后 (圆球) .toggle:after  的样式*/
+.togglebutton label input[type=checkbox]:first-child:checked + .toggle:after {
+	left: 15px; /*距离左侧15px*/
+	background-color: #009587; /*选中后颜色变化*/
+}

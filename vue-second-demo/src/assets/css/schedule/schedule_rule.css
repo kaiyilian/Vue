@@ -1,0 +1,158 @@
+.schedule_rule_container .head .txt {
+    width: 120px;
+    float: left;
+}
+
+.schedule_rule_container .head .schedule_rule_add {
+    float: left;
+    cursor: pointer;
+    width: 100px;
+}
+
+.schedule_rule_container .head .schedule_rule_add i {
+    float: left;
+    font-size: 14px;
+    margin: 11px 5px;
+}
+
+.schedule_rule_container .head .schedule_rule_add div {
+}
+
+.schedule_rule_container .content {
+    height: 100%;
+}
+
+.schedule_rule_container .content #tb_schedule_rule td.startTime div,
+.schedule_rule_container .content #tb_schedule_rule td.endTime div {
+    width: 100px;
+}
+
+.schedule_rule_container .content #tb_schedule_rule td .workShiftTypes {
+    width: 320px;
+}
+
+.schedule_rule_container .content #tb_schedule_rule td .workShiftTypes .schedule_item {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+
+.schedule_rule_container .content #tb_schedule_rule td .workShiftTypes .more {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    text-decoration: underline;
+    color: #4B89DC;
+    cursor: pointer;
+}
+
+.schedule_rule_container .content #tb_schedule_rule td.schedule_view_page .txt {
+    position: relative;
+    text-decoration: underline;
+    color: #4B89DC;
+    cursor: pointer;
+}
+
+.schedule_rule_container .content #tb_schedule_rule td .operate {
+    width: 250px;
+    float: left;
+    padding: 0 5px 0 15px;
+}
+
+.schedule_rule_container .content #tb_schedule_rule td .operate > div {
+    float: left;
+    /*margin-right: 8px;*/
+}
+
+.schedule_rule_container .content #tb_schedule_rule td .operate .txt {
+    margin-right: 15px;
+}
+
+.schedule_rule_container .content #tb_schedule_rule td .operate .btn {
+    margin-top: 5px;
+}
+
+.schedule_rule_container .content .table_container table tbody tr td {
+    padding: 0;
+}
+
+/* 启用/禁用按钮 */
+
+.togglebutton {
+    margin-top: 8px;
+    margin-right: 15px;
+}
+
+.togglebutton label {
+    margin: 0;
+}
+
+.togglebutton label .toggle, .togglebutton label input[type="checkbox][disabled"]:first-child + .toggle {
+    width: 44px;
+    height: 25px;
+    margin: 0;
+}
+
+.togglebutton label .toggle:after {
+    width: 26px;
+    height: 26px;
+    left: -13px;
+    top: -1px;
+}
+
+.togglebutton label input[type=checkbox]:first-child:checked + .toggle:after {
+    background-color: #fff;
+}
+
+.togglebutton label input[type=checkbox]:first-child:checked + .toggle {
+    background-color: #00D800;
+}
+
+.togglebutton label .toggle, .togglebutton label input[type="checkbox][disabled"]:first-child + .toggle {
+    background-color: #ff6600;
+}
+
+/* 排班规律 弹框 */
+
+.schedule_rule_list_modal .modal-body {
+}
+
+.schedule_rule_list_modal .modal-body .msg_none {
+    position: relative;
+    line-height: 100px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.schedule_rule_list_modal .modal-body .row {
+    width: 100%;
+    line-height: 40px;
+}
+
+.schedule_rule_list_modal .modal-body .row .txt {
+    width: 120px;
+    float: left;
+    text-align: right;
+    padding-right: 30px;
+    font-size: 16px;
+    color: #666;
+}
+
+.schedule_rule_list_modal .modal-body .row .work_type_list {
+    float: left;
+}
+
+.schedule_rule_list_modal .modal-body .row .work_type_list .item {
+    float: left;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+

@@ -1,0 +1,308 @@
+/* bootstrap 时间 插件 */
+
+.datetimepicker thead {
+    background-color: #1c84c6;
+    color: #fff;
+}
+
+.datetimepicker thead tr:first-child th:hover, .datetimepicker tfoot th:hover {
+    background-color: #1c84c6;
+}
+
+.datetimepicker thead tr:first-child th, .datetimepicker tfoot th {
+    border-radius: 0;
+}
+
+.datetimepicker table tr td span {
+    width: 50%;
+    margin: 0;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    font-size: 12px;
+}
+
+.datetimepicker table tr td span.active.active {
+    background-color: #1c84c6;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-image: inherit;
+}
+
+/* chosen */
+
+.chosen-container {
+    height: 34px;
+}
+
+.chosen-container-multi .chosen-choices {
+    height: 100% !important;
+}
+
+.chosen-container-multi .chosen-choices li.search-field {
+    line-height: 28px;
+}
+
+.attendance_detail_modal .row .choose_item {
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin: 10px 8px 10px 3px;
+    cursor: pointer;
+}
+
+/* 说明图标 */
+
+.icon_msg {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin: 0 0 0 8px;
+}
+
+.tooltip .tooltip-inner {
+    width: 200px;
+    text-align: left;
+    line-height: 20px !important;
+    font-size: 12px !important;
+}
+
+.attendance_detail_modal .modal-body .attendance_record .icon_msg {
+    margin-top: 8px;
+}
+
+/* 出勤汇总 */
+
+.attendance_detail_container .content .search_container .item .month {
+    position: relative;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.attendance_detail_container .content .search_container .item .add-on {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 34px;
+    height: 100%;
+    /*background-color: red;*/
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: none;
+    border-bottom: none;
+    z-index: 9;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.attendance_detail_container .content .search_container .item .add-on img {
+    width: 16px;
+    height: 16px;
+    margin: 9px;
+}
+
+.attendance_detail_container .content #tb_attendance_detail td.name div,
+.attendance_detail_container .content #tb_attendance_detail td.departmentName div,
+.attendance_detail_container .content #tb_attendance_detail td.workShiftName div {
+    width: 60px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden; /* 超出部分不显示 */
+}
+
+.attendance_detail_container .content #tb_attendance_detail td.attendAddressEnd div,
+.attendance_detail_container .content #tb_attendance_detail td.attendAddressStart div {
+    width: 120px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden; /* 超出部分不显示 */
+}
+
+/* 弹框 */
+
+.attendance_detail_modal .modal-body {
+    font-size: 14px;
+}
+
+.attendance_detail_modal .modal-body .base_info > .row {
+    margin: 0 !important;
+}
+
+.attendance_detail_modal .modal-body .base_info {
+    padding-bottom: 10px;
+}
+
+.attendance_detail_modal .modal-body .base_info .item {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.attendance_detail_modal .modal-body .base_info .item div {
+    float: left;
+    line-height: 34px;
+}
+
+.attendance_detail_modal .modal-body .base_info .item .schedule_list {
+    max-width: 200px;
+}
+
+.attendance_detail_modal .modal-body .attendance_record_container div {
+    float: left;
+    line-height: 34px;
+    font-size: 14px;
+}
+
+.attendance_detail_modal .modal-body .attendance_record_container .txt {
+    width: 72px;
+}
+
+.attendance_detail_modal .modal-body .attendance_record {
+    width: 666px;
+}
+
+.attendance_detail_modal .modal-body .attendance_record .item {
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.attendance_detail_modal .modal-body .attendance_record .item .row {
+    margin: 0 !important;
+    width: 100%;
+}
+
+.attendance_detail_modal .modal-body .attendance_record .item .row.card_info {
+    /*padding: 0 15px 0 0;*/
+    /*width: 150px;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
+    /*-o-text-overflow: ellipsis;*/
+    /*overflow: hidden; !* 超出部分不显示 *!*/
+}
+
+.attendance_detail_modal .modal-body .attendance_record .item .row .attend_status {
+    width: 140px;
+    padding: 0 15px 0 0;
+}
+
+.attendance_detail_modal .modal-body .attendance_record .item .row .input-group {
+    width: 250px;
+}
+
+.attendance_detail_modal .modal-body .attendance_record .item .row .input-group div {
+    float: none;
+    line-height: 0;
+}
+
+.attendance_detail_modal .modal-body .attendance_record .item .next_day {
+}
+
+.attendance_detail_modal .modal-body .attendance_record .item .next_day .choose_item {
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin: 10px 8px 10px 3px;
+    cursor: pointer;
+}
+
+.attendance_detail_modal .modal-body .attend_leave_container {
+}
+
+.attendance_detail_modal .modal-body .attend_leave_container .btn_list {
+    margin-bottom: 10px;
+}
+
+.attendance_detail_modal .modal-body .attend_leave_container .attend_leave_list {
+
+}
+
+.attendance_detail_modal .modal-body .attend_leave_container .attend_leave_list .item {
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.attendance_detail_modal .modal-body .attend_leave_container .attend_leave_list .item > div {
+    float: left;
+}
+
+.attendance_detail_modal .modal-body .attend_leave_container .attend_leave_list .item .type {
+    width: 100px;
+    margin-right: 8px;
+}
+
+.attendance_detail_modal .modal-body .attend_leave_container .attend_leave_list .item .input-group {
+    width: 220px;
+}
+
+.attendance_detail_modal .modal-body .attend_leave_container .attend_leave_list .item .next_day {
+    line-height: 34px;
+    float: left;
+    margin: 0 8px;
+}
+
+.attendance_detail_modal .modal-body .attend_leave_container .attend_leave_list .approval_leave_item {
+    position: relative;
+    float: left;
+    line-height: 34px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.attendance_detail_modal .modal-body .attend_overTime_container {
+}
+
+.attendance_detail_modal .modal-body .attend_overTime_container .btn_list {
+    margin-bottom: 10px;
+}
+
+.attendance_detail_modal .modal-body .attend_overTime_container .attend_overTime_list {
+
+}
+
+.attendance_detail_modal .modal-body .attend_overTime_container .attend_overTime_list .item {
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.attendance_detail_modal .modal-body .attend_overTime_container .attend_overTime_list .item > div {
+    float: left;
+}
+
+.attendance_detail_modal .modal-body .attend_overTime_container .attend_overTime_list .item .type {
+    width: 100px;
+    margin-right: 8px;
+}
+
+.attendance_detail_modal .modal-body .attend_overTime_container .attend_overTime_list .item .input-group {
+    width: 220px;
+}
+
+.attendance_detail_modal .modal-body .attend_overTime_container .attend_overTime_list .item .next_day {
+    line-height: 34px;
+    float: left;
+    margin: 0 8px;
+}
+
+.attendance_detail_modal .modal-body .attend_overTime_container .attend_overTime_list .approval_overTime_item {
+    position: relative;
+    float: left;
+    line-height: 34px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.attendance_detail_modal .modal-footer .clear_attend {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    line-height: 30px;
+    color: #4B89DC;
+    cursor: pointer;
+}

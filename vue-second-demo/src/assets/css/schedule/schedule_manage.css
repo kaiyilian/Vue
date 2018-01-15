@@ -1,0 +1,82 @@
+
+.schedule_manage_container .head .txt {
+    width: 120px;
+    float: left;
+}
+
+.schedule_manage_container .head .schedule_add {
+    float: left;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.schedule_manage_container .head .schedule_add i {
+    float: left;
+    font-size: 14px;
+    margin: 11px 5px;
+}
+
+.schedule_manage_container .head .schedule_add div {
+    font-size: 14px;
+}
+
+.schedule_manage_container .content {
+    height: 100%;
+}
+
+#tb_schedule_manage tbody td.color div {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#tb_schedule_manage tbody td.rest .txt,
+#tb_schedule_manage tbody td.absenteeism .txt,
+#tb_schedule_manage tbody td.overTime .txt {
+    color: #4B89DC;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* 休息时段 弹框 */
+
+.rest_info_modal .modal-body {
+    padding-top: 30px;
+}
+
+.rest_info_modal .modal-body ul {
+    margin: 0;
+    font-size: 14px;
+    padding-left: 80px;
+    line-height: 36px;
+    color: #666;
+}
+
+/* 旷工设置 弹框 */
+
+.absenteeism_info_modal .modal-body {
+    padding-top: 30px;
+}
+
+.absenteeism_info_modal .modal-body ul {
+    margin: 0;
+    font-size: 14px;
+    padding-left: 50px;
+    line-height: 36px;
+    color: #666;
+}
+
+/* 加班设置 弹框 */
+
+.overTime_info_modal .modal-body {
+    padding-top: 30px;
+}
+
+.overTime_info_modal .modal-body .txt {
+    margin: 0;
+    font-size: 14px;
+    line-height: 36px;
+    color: #666;
+    text-align: center;
+}

@@ -1,0 +1,8 @@
+
+.entry_expire_container .content table tbody tr.item td.operate {
+	width: 165px;
+}
+
+.entry_expire_container .content table tbody tr.item td.physical_examination .clr_ff6600 {
+	cursor: pointer;
+}

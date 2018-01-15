@@ -1,0 +1,306 @@
+
+.block {
+    position: relative;
+
+    background-color: #F3F3F4;
+    float: left;
+    width: 100%;
+}
+
+.page1 .block .b_head {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 合同类型 */
+
+.page1 .block {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.page1 .block .b_head .contract_type_item {
+    position: relative;
+    width: 100px;
+    float: left;
+    padding: 0 12px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.page1 .block .b_head .contract_type_item.active {
+    color: #ff6600;
+    border-bottom: 2px solid #ff6600;
+}
+
+.page1 .block .contract_temp_container {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin: 20px 10%;
+    background-color: #fff;
+    clear: both;
+    float: left;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+
+.page1 .block .contract_temp_container .msg_none {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 40px;
+    color: #888;
+}
+
+.page1 .block .contract_temp_container .contract_temp_item {
+    position: relative;
+    width: 28%;
+    height: 250px;
+    margin: 0 2% 20px 3%;
+    float: left;
+}
+
+.page1 .block .contract_temp_container .contract_temp_item .temp_img {
+    width: 100%;
+    height: 100%;
+}
+
+.page1 .block .contract_temp_container .contract_temp_item .icon_preview {
+    width: 27px;
+    height: 31px;
+    cursor: pointer;
+    position: relative;
+    top: -55%;
+    left: 45%;
+    display: none;
+    margin: 0 auto;
+}
+
+.page1 .block .contract_temp_container .contract_temp_item .icon_choose_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.page1 .block .contract_temp_container .contract_temp_item.active .icon_choose_bg {
+    display: -webkit-box;
+    -webkit-box-pack: center; /*左右*/
+    -webkit-box-align: center; /*上下*/
+    -webkit-box-orient: vertical;
+}
+
+.page1 .block .contract_temp_container .contract_temp_item .icon_choose_bg img {
+    width: 80px;
+    height: 80px;
+}
+
+.page1 .block .table_container {
+    border-top: none;
+}
+
+/* 合同设置 */
+
+.page1 .block .table_container {
+    position: relative;
+    width: 80% !important;
+    max-height: 200px;
+    margin: 20px 10%;
+    background-color: #fff;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+
+.page1 .block .table_container table {
+    margin: 0;
+}
+
+.page1 .block .table_container table tbody tr td {
+    padding: 5px 10px !important;
+}
+
+.page1 .block .table_container table tbody tr td.signer_phone {
+    width: 25%;
+}
+
+.page1 .block .table_container table tbody tr td.effective_date {
+    width: 25%;
+    padding-right: 40px !important;
+}
+
+.page1 .block .table_container table tbody tr td.effective_date span {
+    position: absolute;
+    right: 15px;
+    top: 2px;
+}
+
+.page1 .block .table_container table tbody tr td.signer_name {
+    width: 25%;
+}
+
+.page1 .block .btn_add {
+    margin: 0 0 10px 10%;
+}
+
+.page1 .foot {
+    padding: 10px 20px;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 合同填写信息页面 */
+
+.page2 {
+    display: none;
+}
+
+.page2 .block .b_head {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.page2 .block .b_head .txt .icon_msg {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    top: 12px;
+    left: 80px;
+}
+
+.page2 .block .b_body {
+    padding: 20px 0;
+}
+
+.page2 .block .b_body.fill_content {
+
+    padding: 10px 0;
+    width: 90%;
+    margin: 0 5%;
+    /*border: 1px solid rgba(0, 0, 0, 0.2);*/
+
+}
+
+.page2 .block .b_body.fill_content .item {
+    margin-bottom: 5px;
+}
+
+.page2 .block .b_body.fill_content .item .txt {
+    text-align: right;
+}
+
+.page2 .block .b_body .seal_img_container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 10px auto;
+    background-color: #fff;
+}
+
+.page2 .block .b_body .seal_img_container .add_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+}
+
+.page2 .block .b_body .seal_img_container .add_container img {
+    width: 60px;
+    height: 60px;
+}
+
+.page2 .block .b_body .seal_img_container .seal_img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*font-size: 20px;*/
+    /*color: #999;*/
+    /*cursor: pointer;*/
+}
+
+.page2 .block .b_body .seal_img_container .seal_img img {
+    width: initial;
+}
+
+.page2 .foot {
+    padding: 10px 20px;
+    text-align: right;
+    /*background-color: rgba(0,0,0,0.2);*/
+}
+
+/* 印章弹框 */
+
+.seal_temp_modal .modal-body {
+    float: left;
+    width: 100%;
+}
+
+.seal_temp_modal .modal-body .seal_temp_container {
+    float: left;
+    width: 100%;
+}
+
+.seal_temp_modal .modal-body .seal_temp_container .seal_none {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    font-size: 20px;
+    color: #666;
+}
+
+.seal_temp_modal .modal-body .seal_temp_container .item {
+    position: relative;
+    width: 28%;
+    height: 150px;
+    margin: 0 2% 20px 3%;
+    float: left;
+}
+
+.seal_temp_modal .modal-body .seal_temp_container .item .seal_img {
+    width: 100%;
+    height: 100%;
+}
+
+.seal_temp_modal .modal-body .seal_temp_container .item .icon_choose_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.seal_temp_modal .modal-body .seal_temp_container .item.active .icon_choose_bg {
+    display: -webkit-box;
+    -webkit-box-pack: center; /*左右*/
+    -webkit-box-align: center; /*上下*/
+    -webkit-box-orient: vertical;
+}
+
+.seal_temp_modal .modal-body .seal_temp_container .item .icon_choose_bg img {
+    width: 80px;
+    height: 80px;
+}
+
+.seal_temp_modal .modal-footer {
+    clear: both;
+}
+

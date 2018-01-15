@@ -1,0 +1,299 @@
+
+.emp_import_modal .modal-body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.emp_import_modal .modal-body .step_1 {
+    padding-top: 20px;
+}
+
+.emp_import_modal .modal-body .step_1 .upload_container {
+    width: 696px;
+    height: 122px;
+    border: 1px dashed #a4a4a4;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 0 8px;
+    margin: 10px auto 20px;
+}
+
+.emp_import_modal .modal-body .step_1 .upload_container .btn_upload {
+    position: relative;
+    width: 120px;
+    height: 34px;
+    text-align: center;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.emp_import_modal .modal-body .step_1 .upload_container .btn_upload i {
+    /*position: absolute;*/
+    /*left: 10px;*/
+    top: 2px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.emp_import_modal .modal-body .step_1 .upload_container .txt {
+    font-size: 16px;
+    line-height: 36px;
+    color: #999999;
+}
+
+.emp_import_modal .modal-body .step_1 .info_prompt {
+    position: relative;
+    width: 100%;
+    padding: 13px 10% 18px;
+    background-color: #f3f3f4;
+}
+
+.emp_import_modal .modal-body .step_1 .info_prompt .txt {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+    color: rgb(102, 102, 102);
+}
+
+.emp_import_modal .modal-body .step_1 .info_prompt .txt_1 {
+    position: relative;
+    width: 100%;
+    line-height: 26px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.emp_import_modal .modal-body .step_1 .info_prompt .txt_1 span {
+    color: #1c84c6;
+    float: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.emp_import_modal .modal-body .step_2 {
+    display: none;
+    padding: 18px 0 8px;
+}
+
+.emp_import_modal .modal-body .step_2 .row {
+    line-height: 30px;
+    padding: 0 20px;
+    font-size: 12px;
+}
+
+.emp_import_modal .modal-body .step_2 .row .icon {
+    width: 14px;
+    height: 14px;
+    margin: 8px;
+}
+
+.emp_import_modal .modal-body .step_2 .emp_import_table {
+    width: 100%;
+    overflow: auto;
+    max-height: 250px;
+    margin-bottom: 8px;
+}
+
+.emp_import_modal .modal-body .step_2 .emp_import_table table {
+    font-size: 13px;
+    text-align: center;
+    color: #333;
+    margin: 0;
+}
+
+.emp_import_modal .modal-body .step_2 .emp_import_table table thead {
+    font-weight: bold;
+}
+
+.emp_import_modal .modal-body .step_2 .emp_import_table table tbody td {
+    position: relative;
+}
+
+.emp_import_modal .modal-body .step_2 .emp_import_table table tbody td span {
+    width: 100%;
+}
+
+.emp_import_modal .modal-body .step_2 .emp_import_table table tbody td.isError {
+    color: red;
+    font-size: 12px;
+}
+
+.emp_import_modal .modal-body .step_2 .emp_import_table table tbody td.isError img {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 3px;
+    top: 3px;
+}
+
+.emp_import_modal .modal-body .step_2 .emp_import_table table tbody td .phone_msg {
+    color: #2273b4;
+}
+
+.emp_import_modal .modal-body .step_2 .prompt {
+    line-height: 40px;
+    text-align: center;
+}
+
+.emp_import_modal .modal-body .step_2 .prompt span {
+    display: inline;
+    float: none;
+}
+
+.emp_import_modal .modal-footer {
+    text-align: center;
+    /*height: 64px;*/
+}
+
+.emp_import_modal .modal-footer .btn {
+    /*width: 100px;*/
+    /*height: 38px;*/
+}
+
+/* 员工新增 弹框 */
+
+.emp_add_modal .modal-body {
+    padding: 0 0 15px 0;
+}
+
+.emp_add_modal .modal-body table {
+    color: #999999;
+    font-size: 13px;
+    text-align: center;
+}
+
+.emp_add_modal .modal-body table thead tr td {
+    font-weight: bold;
+    /*font-size: 14px;*/
+    color: rgb(34, 34, 34);
+}
+
+.emp_add_modal .modal-body table tbody tr td {
+    padding: 8px 4px;
+}
+
+.emp_add_modal .modal-body table tbody tr td.operate {
+    width: 118px;
+}
+
+.emp_add_modal .modal-body table tbody tr td.operate .btn:not(:last-child) {
+    margin-right: 8px;
+}
+
+.emp_add_modal .modal-body table tbody tr td input {
+    padding: 6px;
+    font-size: 13px;
+}
+
+.emp_add_modal .modal-body table tbody tr td.emp_phone .phone_no {
+    width: 100%;
+}
+
+.emp_add_modal .modal-body table tbody tr td.emp_phone .txt {
+    width: 100%;
+    line-height: 20px;
+    color: #1C84C6;
+}
+
+.emp_add_modal .modal-footer {
+    text-align: center;
+}
+
+/* 员工信息配置 */
+
+.emp_info_set_modal .modal-body .emp_info_set_list .item {
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.emp_info_set_modal .modal-body .emp_info_set_list .item img {
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin: 12px 6px;
+}
+
+.emp_info_set_modal .modal-body .emp_info_set_list .item:not(:first-child) img:first-child {
+    cursor: pointer;
+}
+
+.emp_info_set_modal .modal-body .emp_info_set_list .item .tooltip-inner {
+    width: 200px;
+}
+
+.emp_info_set_modal .modal-body > .txt {
+    font-size: 12px;
+    color: #666;
+    padding-left: 21px;
+    line-height: 25px;
+}
+
+/* 员工列表 */
+
+.emp_prospective_container .content .table_container table {
+    /*width: 1300px;*/
+}
+
+.emp_prospective_container .content .table_container table tbody tr td.operate {
+    /*width: 200px;*/
+}
+
+.emp_prospective_container .content .table_container table tbody tr td.operate div {
+    width: 210px;
+}
+
+.emp_prospective_container .content .table_container table tbody tr td.operate .btn_save,
+.emp_prospective_container .content .table_container table tbody tr td.operate .btn_cancel {
+    display: none;
+}
+
+.emp_prospective_container .content .table_container table tbody tr td.remark div {
+    min-width: 80px;
+}
+
+.emp_prospective_container .content .table_container table tbody tr td.name div {
+    min-width: 80px;
+}
+
+.emp_prospective_container .content .table_container table tbody tr td.physical_examination .txt {
+    cursor: pointer;
+}
+
+.emp_prospective_container .content .table_container table tbody tr td.emp_info_complete_degree .clr_1c84c6 {
+    cursor: pointer;
+    color: #1c84c6;
+}
+
+/* 员工导入 container */
+
+.emp_import_container {
+}
+
+.emp_import_container .item {
+    position: relative;
+}
+
+.emp_import_container .item .icon {
+    /*position: absolute;*/
+    width: 14px;
+    height: 16px;
+    /*top: 10px;*/
+    /*left: 15px;*/
+}
+
+.emp_import_container .item .icon-emp_add {
+    background: url("../../../image/icon_emp_prospective/icon_emp_add_hover.png") no-repeat;
+    background-size: contain;
+}
+
+/* 通用 */
+
+.clr_1c84c6 {
+    color: #1c84c6;
+}
+
+/*.pull-left.pagination-detail {*/
+/*display: none;*/
+/*}*/

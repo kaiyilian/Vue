@@ -1,0 +1,274 @@
+/** 通用设置 */
+
+.general_container {
+	height: 170px;
+	background-color: #fff;
+	padding: 10px 0;
+}
+
+.general_container .entry_prompt_info {
+	position: relative;
+	padding: 10px 12px;
+	outline: 0;
+	border-radius: 2px;
+	min-height: 100px;
+	border: 1px solid #e5e6e7;
+	background-color: #fff;
+	/*line-height: 30px;*/
+	line-height: 75px;
+}
+.general_container .btn_submit{
+	margin-top: 32px;
+}
+.general_container .row {
+	margin: 10px 0 0 !important;
+}
+
+.general_container .row div {
+	float: left;
+	margin-right: 8px;
+}
+
+.general_container .row div img {
+	width: 14px;
+	height: 14px;
+	margin: 12px 0;
+	cursor: pointer;
+}
+
+.general_container .row .time_container {
+	height: 20px;
+	margin-top: 10px;
+}
+
+/* 字段设置 */
+
+.setting_container {
+	height: calc(100% - 170px);
+}
+
+.setting_container > div {
+	height: 100%;
+	overflow-y: auto;
+}
+
+/* 左侧 字段名称 */
+
+.param_name_container {
+	background-color: #F3F3F4;
+	padding: 0;
+}
+
+.param_name_container .item {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.param_name_container .item:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 16px solid #F3F3F4;
+	right: 0;
+	top: 12px;
+	transform: rotate(270deg);
+}
+
+.param_name_container .item:hover {
+	color: #fff;
+	background-color: #1a7bb9;
+}
+
+.param_name_container .item.active {
+	color: #fff;
+	background-color: #1a7bb9;
+}
+
+.param_add_container {
+	background-color: #fff;
+}
+
+.param_add_container .add_block {
+	width: 80%;
+}
+
+.param_add_container .add_block > .row {
+}
+
+.param_add_container .add_block > .row .name_add {
+	height: 42px;
+	line-height: 40px;
+	padding-left: 16px;
+	border: 1px solid #F3F3F4;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.param_add_container .add_block > .row .name_add input {
+	position: relative;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+
+.param_add_container .add_block > .row .btn_add {
+	height: 42px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.param_add_container .add_block > .row .prompt {
+	padding: 5px 8px;
+}
+
+.param_add_container .add_block > .row .prompt .row {
+	margin: 0 !important;
+	line-height: 26px;
+}
+
+.param_add_container .add_block > .row .prompt .row .icon.icon-prompt {
+	position: relative;
+	width: 14px;
+	height: 16px;
+	background: url("../../../image/icon_jurisdiction/icon_prompt.png") no-repeat;
+	background-size: contain;
+	display: block;
+	margin: 4px 2px;
+	float: left;
+}
+
+.param_add_container .add_block > .row .prompt .row .choose_item {
+	width: 14px;
+	height: 14px;
+	margin: 5px 3px;
+}
+
+.param_add_container .add_block > .row .prompt .is_bad_container:hover {
+	color: #1c84c6;
+	cursor: pointer;
+}
+
+.param_content_container {
+	padding: 0;
+	border-left: 1px solid #e7eaec;
+}
+
+.param_content_container .list_container {
+	position: relative;
+	width: 100%;
+}
+
+.param_content_container .list_container .param_none {
+	position: relative;
+	width: 100%;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.param_content_container .list_container .item {
+	position: relative;
+	width: 100%;
+	line-height: 36px;
+	height: 36px;
+	padding: 0 80px 0 0;
+	border-bottom: 1px solid #e7eaec !important;
+}
+
+.param_content_container .list_container .item:nth-child(2n+2) {
+	background-color: #fff;
+}
+
+.param_content_container .list_container .item i {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 36px;
+	text-align: center;
+	line-height: 36px;
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	display: none;
+}
+
+.param_content_container .list_container .item i.btn_modify {
+	right: 36px;
+	background-color: #1a7bb9;
+}
+
+.param_content_container .list_container .item i.btn_del {
+	right: 0;
+	background-color: #ed5565;
+}
+
+.param_content_container .list_container .item i.btn_save {
+	right: 36px;
+	background-color: #1a7bb9;
+}
+
+.param_content_container .list_container .item i.btn_cancel {
+	right: 0;
+	background-color: #ed5565;
+}
+
+.param_content_container .list_container .item.active i.btn_modify,
+.param_content_container .list_container .item.active i.btn_del {
+	display: block;
+}
+
+.param_content_container .list_container .item.active i.btn_save,
+.param_content_container .list_container .item.active i.btn_cancel {
+	display: none;
+}
+
+.param_content_container .list_container .item.is_modify i.btn_modify,
+.param_content_container .list_container .item.is_modify i.btn_del {
+	display: none;
+}
+
+.param_content_container .list_container .item.is_modify i.btn_save,
+.param_content_container .list_container .item.is_modify i.btn_cancel {
+	display: block;
+}
+
+.param_content_container .list_container .item .name {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-left: 30px;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.param_content_container .list_container .item.is_bad .name {
+	color: red;
+}
+
+.param_content_container .list_container .item.is_modify .name {
+	background-color: #fff;
+}
+
+.param_content_container .list_container .item .name input {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	outline: 0;
+	border: 0;
+}

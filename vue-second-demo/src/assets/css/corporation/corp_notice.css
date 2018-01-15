@@ -1,0 +1,77 @@
+
+.corp_notification_container .content .table_container {
+	padding: 0;
+}
+
+.corp_notification_container .content .table_container table tbody tr td.notification_content {
+	padding: 0 8px;
+}
+
+.corp_notification_container .content .table_container table tbody tr td.notification_author{
+	/*width:100px;*/
+}
+.corp_notification_container .content .table_container table tbody tr td.notification_time {
+	width:100px;
+}
+.corp_notification_container .content .table_container table tbody tr td.operate {
+	width: 120px;
+}
+
+/* 消息发布 */
+
+.notification_add_modal span {
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.notification_add_modal .modal-body .row {
+	position: relative;
+	width: 100%;
+	margin: 0 0 10px;
+}
+
+.notification_add_modal .modal-body .row > .txt {
+	text-align: right;
+	line-height: 34px;
+}
+
+.notification_add_modal .modal-body .row .txtInfo {
+}
+
+.notification_add_modal .modal-body .row .notification_content_add textarea {
+	min-height: 120px;
+}
+
+.notification_add_modal .modal-footer {
+	text-align: center;
+}
+
+/* 信息详情 */
+
+.notification_info_modal span {
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.notification_info_modal .modal-body .row {
+	position: relative;
+	width: 100%;
+	margin: 0 0 10px;
+}
+
+.notification_info_modal .modal-body .row > .txt {
+	/*width: 60px;*/
+	text-align: right;
+	line-height: 34px;
+	/*margin-right: 10px;*/
+}
+
+.notification_info_modal .modal-body .row .txtInfo {
+	line-height: 34px;
+}
+
+.notification_info_modal .modal-footer {
+	text-align: center;
+}

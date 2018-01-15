@@ -1,0 +1,107 @@
+/* bootstrap 时间 插件 */
+
+.datetimepicker thead {
+    background-color: #1c84c6;
+    color: #fff;
+}
+
+.datetimepicker thead tr:first-child th:hover, .datetimepicker tfoot th:hover {
+    background-color: #1c84c6;
+}
+
+.datetimepicker thead tr:first-child th, .datetimepicker tfoot th {
+    border-radius: 0;
+}
+
+.datetimepicker table tr td span {
+    width: 50%;
+    margin: 0;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    font-size: 12px;
+}
+
+.datetimepicker table tr td span.active.active {
+    background-color: #1c84c6;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-image: inherit;
+}
+
+/* chosen */
+.chosen-container {
+    height: 34px;
+}
+
+.chosen-container-multi .chosen-choices {
+    height: 100% !important;
+}
+
+.chosen-container-multi .chosen-choices li.search-field {
+    line-height: 28px;
+}
+
+/* 出勤汇总 */
+
+.attendance_summary_container .content .search_container .item .month {
+    position: relative;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.attendance_summary_container .content .search_container .item .add-on {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 34px;
+    height: 100%;
+    /*background-color: red;*/
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: none;
+    border-bottom: none;
+    z-index: 9;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.attendance_summary_container .content .search_container .item .add-on img {
+    width: 16px;
+    height: 16px;
+    margin: 9px;
+}
+
+.attendance_summary_container .content table tbody tr.item .name .txt,
+.attendance_summary_container .content table tbody tr.item .leaveTimes .txt,
+.attendance_summary_container .content table tbody tr.item .lateCount .txt,
+.attendance_summary_container .content table tbody tr.item .unFullCount .txt,
+.attendance_summary_container .content table tbody tr.item .absentTimes .txt,
+.attendance_summary_container .content table tbody tr.item .lackCount .txt {
+    position: relative;
+    text-decoration: underline;
+    color: #4B89DC;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden; /* 超出部分不显示 */
+}
+
+.attendance_summary_container .content table tbody tr.item .name .txt {
+    width: 80px;
+}
+
+.attendance_summary_container .content table tbody tr.item .departmentName div,
+.attendance_summary_container .content table tbody tr.item .workShiftName div {
+    width: 90px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden; /* 超出部分不显示 */
+}
+
+

@@ -1,0 +1,134 @@
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	/*background-color: #f4f4f4;*/
+	font-family: 'SimSun';
+	color: #333;
+	background-color: transparent;
+	padding-top: 75px;
+}
+
+
+
+body > .load-container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.50);
+	z-index: 9999;
+	top: 0;
+	left: 0;
+}
+
+body > .load-container .loader {
+	position: relative;
+	margin: 13em auto;
+}
+
+.clr_d87c11 {
+	color: #d87c11;
+}
+
+.clr_ff6600 {
+	color: #ff6600;
+}
+
+.clr_1c84c6 {
+	color: #1c84c6;
+}
+
+.clr_red {
+	color: red;
+}
+
+.center {
+	display: -webkit-box;
+	-webkit-box-pack: center; /*左右*/
+	-webkit-box-align: center; /*上下*/
+	-webkit-box-orient: vertical;
+}
+
+.f_left {
+	float: left;
+}
+
+/* 按钮 颜色 --s-- */
+
+.btn-success {
+	background-color: #567ec0 !important;
+	border-color: #567ec0 !important;
+	color: #fff;
+}
+
+.btn-success:hover {
+	background-color: #183e7f !important;
+	border-color: #183e7f !important;
+	color: #fff;
+}
+
+.btn-orange {
+	background-color: #ff6600 !important;
+	border-color: #ff6600 !important;
+	color: #fff !important;
+}
+
+.btn-orange:hover {
+	background-color: #e85d00 !important;
+	border-color: #e85d00 !important;
+	color: #fff;
+}
+
+.btn-white {
+	background-color: #ffffff !important;
+	border-color: #d2d2d2 !important;
+	color: #666;
+}
+
+.btn-white:hover {
+	background-color: #ffffff !important;
+	border-color: #d2d2d2 !important;
+	color: #666;
+}
+
+/* 按钮 颜色 --e-- */
+
+/* 弹框 --s-- */
+
+.modal span {
+	display: block;
+	float: left;
+	position: relative;
+}
+
+.modal .modal-header {
+	height: 55px;
+	background-color: #eeeeee;
+}
+
+.modal .modal-header h4 {
+	font-size: 18px;
+	color: #222222;
+}
+
+.modal .modal-header .close {
+	/*margin-top: 3px;*/
+}
+
+.modal .modal-footer {
+	position: relative;
+	text-align: center;
+	height: 55px;
+	background-color: #eeeeee;
+	display: -webkit-box;
+	-webkit-box-pack: center; /*左右*/
+	-webkit-box-align: center; /*上下*/
+	-webkit-box-orient: vertical;
+	padding: 0;
+}
+
+/* 弹框 --e-- */
+

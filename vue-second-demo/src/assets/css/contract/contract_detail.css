@@ -1,0 +1,109 @@
+.contract_detail_container {
+}
+
+.contract_detail_container .head {
+    padding-left: 34px;
+}
+
+.contract_detail_container .head > div {
+    color: #666;
+    position: relative;
+    font-size: 14px;
+}
+
+.contract_detail_container .content {
+}
+
+.contract_detail_container .content .icon_status {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 250px;
+    height: 250px;
+}
+
+.contract_detail_container .content .user_info {
+    padding: 10px 25px;
+    float: left;
+    width: 100%;
+    min-height: 200px;
+}
+
+.contract_detail_container .content .user_info .user_type {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contract_detail_container .content .user_info .user_fill_content {
+}
+
+.contract_detail_container .content .user_info .user_fill_content img {
+    position: absolute;
+    top: -50%;
+    width: 100px;
+    height: 100px;
+}
+
+.contract_detail_container .content .user_info .user_fill_content > div {
+    font-size: 14px;
+}
+
+.contract_detail_container .content .btn_operate {
+    padding: 10px 15px;
+    text-align: right;
+    float: left;
+    width: 100%;
+}
+
+.contract_detail_container .content .btn_operate .btn {
+    margin-right: 8px
+}
+
+.contract_detail_container .foot {
+    position: relative;
+    line-height: 50px;
+    background-color: #F3F3F4;
+    padding: 0;
+}
+
+.contract_detail_container .foot i {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-style: inherit;
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.contract_detail_container .foot i:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    display: block;
+    margin: 14px 0;
+    background: url("../../../image/icon_contract/icon_preview.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+
+/* 重新发送 弹框 */
+
+.contract_resend_modal .modal-body .row {
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.contract_resend_modal .modal-body .row div {
+    display: inline-block;
+    color: #ff6600;
+}
+
+.contract_resend_modal .modal-body .row div .effective_date {
+    display: inline-block;
+    float: none;
+}

@@ -1,0 +1,25 @@
+
+.salary_history_container {
+    /*height: 100%;*/
+    /*margin-bottom: 0;*/
+}
+
+.salary_history_container .content {
+    /*height: calc(100% - 40px);*/
+}
+
+.salary_history_container .salary_validity_container {
+    padding-left: 20px;
+    margin: 10px 0;
+    float: left;
+}
+
+.salary_history_container .salary_validity_container > div {
+    display: inline-block;
+}
+
+.salary_history_container .salary_validity_container .c_567ec0 {
+    color: #567ec0;
+    cursor: pointer;
+    text-decoration: underline;
+}

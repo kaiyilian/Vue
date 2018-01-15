@@ -1,0 +1,36 @@
+
+.modal-body .row {
+	margin-left: -15px !important;
+	margin-right: -15px !important;
+	color: #999999;
+}
+
+.modal-body .row .txt {
+	line-height: 34px;
+	text-align: right;
+}
+
+.modal-body .row .prompt {
+	padding-left: calc(25% + 15px);
+	line-height: 30px;
+	margin-top: 8px;
+}
+
+.modal-body .row .prompt i {
+	position: relative;
+	width: 14px;
+	height: 16px;
+	background: url("../../../image/icon_jurisdiction/icon_prompt.png") no-repeat;
+	background-size: contain;
+	display: block;
+	margin: 6px 2px;
+	float: left;
+}
+
+.account_manage_container .item .operate {
+	width: 120px;
+}
+
+.account_manage_container .item .operate span {
+	margin-left: 5px;
+}

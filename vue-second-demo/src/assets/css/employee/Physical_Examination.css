@@ -1,0 +1,157 @@
+
+*, body {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #F9F9F9;
+}
+
+.physical_examination_report {
+	position: relative;
+	width: 100%;
+	background-color: #fff;
+	padding: 20px 10px;
+}
+
+.physical_examination_report > .title {
+	position: relative;
+	width: 100%;
+	font-size: 26px;
+	color: #333;
+	text-align: center;
+	line-height: 60px;
+}
+
+.physical_examination_report .block {
+	position: relative;
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.10);
+	padding: 0;
+}
+
+.physical_examination_report .block:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.physical_examination_report .block > .title {
+	position: relative;
+	width: 100%;
+	padding-left: 10px;
+	color: #333;
+	font-size: 18px;
+	font-family: '微软雅黑';
+	background-color: #F9F9F9;
+	line-height: 40px;
+}
+
+.physical_examination_report .block .content {
+	position: relative;
+	width: 100%;
+	padding: 0;
+}
+
+.physical_examination_report .block .content .row {
+	position: relative;
+	width: 100%;
+	line-height: 40px;
+	margin: 0 !important;
+}
+
+.physical_examination_report .block .content .row img {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 10px;
+	left: 8px;
+}
+
+.physical_examination_report .block .content .row:not(:last-child) {
+	border-bottom: 1px solid #F9F9F9;
+}
+
+.physical_examination_report .block .content .row .col-xs-6:first-child {
+	border-right: 1px solid #F9F9F9;
+	padding-left: 40px;
+}
+
+.physical_examination_detail {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.physical_examination_detail .block {
+	position: relative;
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.physical_examination_detail .block .title {
+	position: relative;
+	width: 100%;
+	padding-left: 15px;
+	/*color: #ff6600;*/
+	color:#333;
+	font-family: 微软雅黑;
+	font-size: 18px;
+	line-height: 50px;
+}
+
+.physical_examination_detail .block .title:before {
+	/*content: ' ';*/
+	/*position: absolute;*/
+	/*width: 3px;*/
+	/*height: 26px;*/
+	/*top: 12px;*/
+	/*left: 15px;*/
+	/*border-radius: 5px;*/
+	/*background-color: #6abf40;*/
+}
+
+.physical_examination_detail .block .head {
+	background-color: #8c8c8c;
+	font-size: 15px;
+	color: rgb(255, 255, 255);
+	padding: 0;
+}
+
+.physical_examination_detail .block .head .col-xs-3 {
+	padding: 0;
+	text-align: center;
+	line-height: 30px;
+}
+
+.physical_examination_detail .block .content {
+	padding: 0;
+}
+
+.physical_examination_detail .block .content .row {
+	margin: 0 !important;
+	line-height: 30px;
+	background-color: #fff;
+}
+
+.physical_examination_detail .block .content .row:not(:last-child) {
+	border-bottom: 1px solid #f9f9f9;
+}
+
+.physical_examination_detail .block .content .row:nth-child(2n+2) {
+	background-color: rgba(0, 0, 0, 0.02);
+}
+
+.physical_examination_detail .block .content .row .col-xs-3 {
+	padding: 0;
+	text-align: center;
+}
+
+.physical_examination_detail .block .content .row.is_bad {
+	color: #cd0000;
+}
+

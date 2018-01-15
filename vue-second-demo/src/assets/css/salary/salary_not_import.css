@@ -1,0 +1,10 @@
+
+.salary_not_import_manage_container .content table tbody tr.item .fail_msg {
+	width: 30%;
+	padding: 0 5px;
+}
+
+.salary_not_import_manage_container .content table tbody tr.item .operate {
+	width: 80px;
+	padding: 0 5px;
+}

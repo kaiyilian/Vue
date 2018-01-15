@@ -1,0 +1,232 @@
+
+.index_img {
+	position: relative;
+	/*width: 80%;*/
+	/*margin: 0 10%;*/
+	float: left;
+	/*min-height: 400px;*/
+}
+
+.index_img:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	opacity: 0.6;
+}
+
+.index_container {
+	background-color: #F3F3F4;
+	border: 0;
+}
+
+.index_container .user_info {
+	position: relative;
+	width: 100%;
+	/*height: 80px;*/
+	line-height: 60px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	float: left;
+	padding: 10px;
+}
+
+.index_container .user_info .user_head_img {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin: 10px;
+}
+
+.index_container .user_info .corp_info {
+	font-size: 14px;
+	color: #567ec0;
+	float: left;
+}
+
+.index_container .user_info .login_param {
+	float: right;
+	padding: 0;
+	font-size: 12px;
+	color: #666666;
+}
+
+.index_container .block {
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.10);
+	border-radius: 5px;
+	padding: 0;
+	/*background-color: #fff;*/
+	width: 48%;
+	margin-bottom: 10px;
+}
+
+.index_container .block:nth-child(2n+2) {
+	margin-right: 4%;
+}
+
+.index_container .block .head {
+	position: relative;
+	width: 100%;
+	padding: 0 10px;
+	/*border-bottom: 1px solid rgba(0, 0, 0, 0.10);*/
+	margin: 0;
+}
+
+.index_container .block .head:before {
+	display: none;
+}
+
+.index_container .block .head .txt {
+	width: auto;
+	font-size: 18px;
+	color: #ff6600;
+}
+
+.index_container .block .head .btn_detail {
+	position: relative;
+	width: 100px;
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	cursor: pointer;
+}
+
+.index_container .block .content {
+	height: 240px;
+	text-align: left;
+	overflow: auto;
+	background-color: #fff;
+	border-top: 1px solid rgba(0, 0, 0, 0.10);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+	font-size: 13px;
+	color: #999999;
+}
+
+.index_container .block .content .none {
+	position: relative;
+	width: 100%;
+	line-height: 100px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.index_container .block .foot {
+	background-color: #fff;
+}
+
+.index_container .block .foot .count_container {
+	/*width: 100px;*/
+	margin: auto;
+}
+
+.index_container .block .foot .count_container .count {
+	color: #ff6600;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 3px;
+}
+
+/* 排班管理 */
+
+.index_container .block_4 .content .row {
+	line-height: 44px;
+	text-align: center;
+	margin: 0 !important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.index_container .block_4 .content .row .img {
+	padding: 0;
+	width: 143px;
+	height: 44px;
+}
+
+.index_container .block_4 .content .row .img img {
+	height: 100%;
+}
+
+.index_container .block_4 .content .row .date {
+	padding: 0;
+}
+
+.index_container .block_4 .content .row .date div {
+	padding: 0;
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.index_container .block_4 .content .row .date {
+	color: #333333;
+	font-size: 14px;
+}
+
+.index_container .block_4 .content .schedule_list {
+	color: #fff;
+}
+
+.index_container .block_4 .content .schedule_list .item {
+	position: relative;
+	width: 100%;
+	float: left;
+	height: 44px;
+}
+
+.index_container .block_4 .content .schedule_list .item:not(:last-child) {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.index_container .block_4 .content .schedule_list .item > div {
+	padding: 0 10px;
+	height: 100%;
+}
+
+.index_container .block_4 .content .schedule_list .item > div:not(:first-child) {
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.index_container .block_4 .content .schedule_list .item .workShift_name {
+	width: 143px;
+	height: 44px;
+	color: #333333;
+	font-size: 14px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden; /* 超出部分不显示 */
+}
+
+.index_container .block_4 .content .schedule_list .item > div > div {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	/*margin: 5px 0;*/
+}
+
+/* debugger */
+
+.index_container .user_info_content {
+	position: relative;
+	float: left;
+}
+
+.index_container .user_info_content .line {
+	position: relative;
+	width: 100%;
+	float: left;
+	line-height: 30px;
+}
+
+.index_container .user_info_content .line:first-child {
+	font-size: 15px;
+	color: #2273b4;
+	font-weight: bold;
+}
+
+.index_container .user_info_content .line .item {
+	margin-right: 30px;
+}
+

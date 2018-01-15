@@ -1,0 +1,103 @@
+
+.nav > li.active {
+	border-left: none;
+	background: transparent;
+}
+
+/*step*/
+
+a {
+	cursor: pointer;
+}
+
+.step {
+	counter-reset: flag;
+	padding: 0 80px;
+}
+
+.step li {
+	position: relative;
+}
+
+.step li a:before {
+	content: counter(flag);
+	counter-increment: flag;
+}
+
+.step li a:after {
+	content: "";
+}
+
+/*step-round*/
+.step-round {
+	/*margin-bottom: 40px;*/
+	padding-bottom: 40px;
+}
+
+.step-round > li > a {
+	color: #CCCCCC;
+	padding: 0;
+	line-height: 20px;
+}
+
+.step-round > li.active > a,
+.step-round > li.active > a:focus,
+.step-round > li.active > a:hover {
+	color: #567ec0;
+	background-color: rgba(0, 0, 0, 0);
+
+}
+
+.step-round li a:before {
+	position: absolute;
+	z-index: 2;
+	bottom: -30px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 24px;
+	height: 24px;
+	border: 1px solid;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	line-height: 24px;
+	/*box-shadow: 0 0 0 5px rgb(204, 204, 204);*/
+}
+
+.step-round li a:after {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -24px;
+	background-color: #CCCCCC;
+	z-index: 1;
+	height: 8px;
+}
+
+.step-round li a:hover {
+	background-color: rgba(0, 0, 0, 0);
+	color: #567ec0;
+}
+
+.step-round li:hover a:before,
+.step-round li.active a:before {
+	background-color: #567ec0;
+	color: #FFFFFF;
+	border-color: #567ec0;
+}
+
+.step-round li:hover a:after,
+.step-round li.active a:after {
+	background-color: #567ec0;
+}
+
+.step-round li:first-child a:after {
+	/*left: 30%;*/
+	border-radius: 5px 0 0 5px;
+}
+
+.step-round li:last-child a:after {
+	/*right: 30%;*/
+	border-radius: 0 5px 5px 0;
+}
+

@@ -1,0 +1,8 @@
+
+.probation_expire_container .content table tbody tr.item .operate {
+	width: 60px;
+}
+
+.probation_expire_container .content table tbody tr.item .operate .btn {
+	margin-left: 5px;
+}

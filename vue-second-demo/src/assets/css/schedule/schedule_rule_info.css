@@ -1,0 +1,218 @@
+
+.schedule_rule_info_container .content {
+    height: 100%;
+}
+
+.schedule_rule_info_container .content .row {
+    margin: 0 !important;
+    padding: 8px 0;
+}
+
+.schedule_rule_info_container .content .row .schedule_name,
+.schedule_rule_info_container .content .row .schedule_rule_time,
+.schedule_rule_info_container .content .row .work_shift,
+.schedule_rule_info_container .content .row .schedule_rule_cycle,
+.schedule_rule_info_container .content .row .schedule_rule_laws {
+    margin: 3px 0;
+}
+
+.schedule_rule_info_container .content .row .schedule_rule_time .input-group {
+    float: left;
+}
+
+.schedule_rule_info_container .content .row .schedule_rule_time .is_loop {
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.schedule_rule_info_container .content .row .schedule_rule_time .is_loop img {
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin: 9px 3px;
+}
+
+.schedule_rule_info_container .content .row .work_shift {
+}
+
+.schedule_rule_info_container .content .row .work_shift .btn_work_shift_add {
+    float: left;
+    margin: 5px 20px 5px 0;
+}
+
+.schedule_rule_info_container .content .row .work_shift .work_shift_list {
+    float: left;
+}
+
+.schedule_rule_info_container .content .row .work_shift .work_shift_list .item {
+    position: relative;
+    float: left;
+    padding: 0 30px 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 8px 5px 0;
+}
+
+.schedule_rule_info_container .content .row .work_shift .work_shift_list .item .icon_del {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    cursor: pointer;
+    width: 20px;
+    text-align: center;
+}
+
+.schedule_rule_info_container .content .row .schedule_rule_laws {
+    width: 620px;
+}
+
+.schedule_rule_info_container .content .row .schedule_rule_laws .item {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    border-radius: 5px;
+    background-color: #e6e9ed;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+    float: left;
+    color: #fff;
+    margin: 0 8px 5px 0;
+}
+
+.schedule_rule_info_container .content .row .schedule_rule_laws .item ul {
+    position: absolute;
+    top: 44px;
+    left: -23px;
+    min-width: 280px;
+    /*max-height: 200px;*/
+    padding: 4px 45px 4px 5px;
+    border: 1px solid #e7eaec;
+    border-radius: 3px;
+    /*z-index: 99;*/
+    background-color: #fff;
+    margin: 0;
+    height: 160px;
+    overflow-y: auto;
+    z-index: 99999;
+}
+
+.schedule_rule_info_container .content .row .schedule_rule_laws .item ul li {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    line-height: 36px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 5px;
+    text-align: left;
+}
+
+.schedule_rule_info_container .content .row .schedule_rule_laws .item ul li i {
+    position: absolute;
+    right: -36px;
+    top: 0;
+    background-color: #fff;
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+    /*font-size: 14px;*/
+}
+
+.schedule_rule_info_container .content .row .schedule_rule_laws .item ul li i img {
+    width: 24px;
+    height: 24px;
+}
+
+/* 班组弹框 */
+
+.work_shift_modal .modal-body {
+    padding: 0;
+    background-color: #fff;
+}
+
+.work_shift_modal .modal-body .row {
+    margin: 0 !important;
+    height: 300px;
+}
+
+.work_shift_modal .modal-body .row .txt {
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.work_shift_modal .modal-body .row .work_shift_container {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    height: 100%;
+    padding: 0 8px;
+}
+
+.work_shift_modal .modal-body .row .work_shift_container .work_shift_list {
+    height: calc(100% - 40px);
+    overflow: auto;
+    /*padding: 10px 0;*/
+}
+
+.work_shift_modal .modal-body .row .work_shift_container .work_shift_list .msg_none {
+    text-align: center;
+    line-height: 60px;
+}
+
+.work_shift_modal .modal-body .row .work_shift_container .work_shift_list .item {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.work_shift_modal .modal-body .row .work_shift_container .work_shift_list .item img {
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin: 12px 5px;
+}
+
+.work_shift_modal .modal-body .row .work_shift_container .work_shift_list .item img span {
+}
+
+.work_shift_modal .modal-body .row .work_shift_container .work_shift_list .item.active {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.work_shift_modal .modal-body .row .work_shift_user_container {
+}
+
+.work_shift_modal .modal-body .row .work_shift_user_container .table_container table {
+    font-size: 12px;
+}
+
+.work_shift_modal .modal-body .row .work_shift_user_container .table_container table thead tr th {
+    border-bottom: 0;
+}
+
+.work_shift_modal .modal-footer {
+    float: left;
+    width: 100%;
+}
+
+.work_shift_modal .modal-footer .choose_container {
+    position: absolute;
+    left: 23px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.work_shift_modal .modal-footer .choose_container img {
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin: 7px 5px 0;
+}
+
+

@@ -1,0 +1,78 @@
+/* 树结构 */
+
+#tree {
+	margin: 10px 0;
+}
+
+.ztree li span.button.add {
+	background: url("../../../image/icon_setting/icon_setting_dept_add.png");
+	background-size: 100% 100%;
+	margin-left: 5px;
+}
+
+.ztree li span.button.edit {
+	background: url("../../../image/icon_setting/icon_setting_dept_modify.png");
+	background-size: 100% 100%;
+	margin-left: 5px;
+}
+
+.ztree li span.button.remove {
+	background: url("../../../image/icon_setting/icon_setting_dept_del.png");
+	background-size: 100% 100%;
+	margin-left: 5px;
+}
+
+.ztree li span.button.rootNode_ico_open,
+.ztree li span.button.rootNode_ico_close,
+.ztree li span.button.rootNode_ico_docu {
+	background: url("../../../image/icon_setting/icon_setting_dept_rootNode.png");
+	background-size: 100% 100%;
+}
+
+.ztree li span.button.subNode_ico_open, .ztree li span.button.subNode_ico_close,
+.ztree li span.button.subNode_ico_docu {
+	background: url("../../../image/icon_setting/icon_setting_dept_subNode.png");
+	background-size: 100% 100%;
+}
+
+.ztree li {
+	line-height: 24px;
+}
+
+.ztree li a {
+	height: 24px;
+}
+
+.ztree li span.button {
+	margin-right: 5px;
+}
+
+.ztree li span.button.add {
+	background-image: url("../../../image/icon_setting/icon_setting_dept_add.png");
+}
+
+.ztree li span.button.add {
+	margin-left: 2px;
+	margin-right: -1px;
+	background-position: -144px 0;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+.department_setting_container > .content {
+	position: relative;
+	padding: 10px 10%;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+}
+
+.modal .modal-body .row .txt {
+	text-align: center;
+	line-height: 34px;
+}
+
+.department_setting_container * {
+	box-sizing: inherit !important;
+	-webkit-box-sizing: content-box !important;
+}

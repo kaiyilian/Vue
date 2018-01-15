@@ -1,0 +1,130 @@
+
+.border-top {
+	border-top: 1px solid #e7eaec !important;
+}
+
+#corp_info_container {
+	width: 100%;
+	float: left;
+	padding-top: 8px;
+}
+
+#corp_info_container .container {
+	width: 48%;
+	float: left;
+	margin: 0 1% 20px;
+}
+
+#corp_info_container .container:nth-child(2n+2) {
+	clear: inherit;
+}
+
+#corp_info_container .container .head {
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+}
+
+#corp_info_container .container > .content {
+	padding: 20px 16px;
+}
+
+#corp_info_container .container .content .prompt {
+	color: #999999;
+}
+
+#corp_info_container .container .foot {
+	/*text-align: center;*/
+	padding-top: 8px;
+}
+
+#corp_info_container .container .foot .btn {
+	margin-left: 25px;
+	padding-right: 20px;
+}
+
+#corp_info_container .container .foot .btn .fa.arrow {
+	position: absolute;
+	font-size: 20px;
+	margin: 0;
+	transform: rotate(180deg);
+	right: 6px;
+}
+
+/* 公司信息 */
+
+.corp_info_container {
+}
+
+.corp_info_container .content {
+	padding: 0 0 10px !important;
+}
+
+.corp_info_container .content .company_img {
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
+
+.corp_info_container .content .company_info {
+	position: relative;
+	width: 100%;
+
+}
+
+.corp_info_container .content .company_info .row {
+	position: relative;
+	background-color: #F3F3F4;
+	line-height: 40px;
+	text-align: center;
+}
+
+.corp_info_container .content .company_info .row div[class*='col-xs-4'] {
+	padding: 0;
+}
+
+.corp_info_container .content .company_info .row div .txt {
+	padding: 0;
+}
+
+.corp_info_container .content .company_info .row div .txtInfo {
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.corp_info_container .content .company_info > .item {
+	position: relative;
+	line-height: 30px;
+	padding-left: 20px;
+}
+
+.corp_info_container .content .company_info .company_qrCode {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	right: 50px;
+	top: 55px;
+}
+
+/* 企业公告 */
+
+.corp_news_container .head .txtR {
+	font-size: 12px;
+}
+
+.corp_news_container .content {
+	padding: 0 0 10px !important;
+	height: 380px;
+	overflow: auto;
+}
+
+.corp_news_container .content .table_container {
+	padding: 0;
+	border-top: 0;
+}
+
+.corp_news_container .content .table_container table {
+	margin: 0;
+}
