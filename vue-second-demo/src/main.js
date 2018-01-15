@@ -6,9 +6,8 @@ import Vue from 'vue'
 import Login from './Login.vue'
 import router from './router'
 
-// require("jquery")
-import "../static/bootstrap/css/bootstrap.min.css"
-import "../static/bootstrap/js/bootstrap.min.js"
+import "./assets/lib/bootstrap/css/bootstrap.min.css"
+import "./assets/lib/bootstrap/js/bootstrap.min"
 
 
 Vue.config.productionTip = false;

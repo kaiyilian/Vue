@@ -1,7 +1,7 @@
 <template>
 
     <div class="middle-box text-center loginscreen  animated fadeInDown login_bg">
-aaa
+
         <header>
             <div class="login_bg1"></div>
             <div class="hotline_container">
@@ -14,78 +14,80 @@ aaa
         </header>
 
 
-        <!--<div class="content">-->
+        <div class="content">
 
-        <!--<form class="m-t" role="form" method="post" action="">-->
-        <!--<h4 style="">招才进宝企业后台管理登录</h4>-->
+            <form class="m-t" role="form" method="post" action="">
+                <h4 style="">招才进宝企业后台管理登录</h4>
 
-        <!--<div class="form-group">-->
-        <!--<div class="input-group">-->
-        <!--<div class="input-group-addon">-->
-        <!--<img src="./assets/image/icon_userName.png">-->
-        <!--</div>-->
-        <!--<input id="userName" type="text" class="form-control" onblur="CaptchaChange();"-->
-        <!--placeholder="用户名" required="" name="userName" autocomplete="off">-->
-        <!--</div>-->
-        <!--</div>-->
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <img src="./assets/image/icon_userName.png">
+                        </div>
+                        <input v-model="userName" type="text" class="form-control"
+                               placeholder="用户名" required="" maxlength="18"
+                               autocomplete="off">
+                    </div>
+                </div>
 
-        <!--<div class="form-group">-->
+                <div class="form-group">
 
-        <!--<div class="input-group">-->
-        <!--<div class="input-group-addon">-->
-        <!--<img src="./assets/image/icon_userPwd.png">-->
-        <!--</div>-->
-        <!--<input id="password" type="password" class="form-control" maxlength="32"-->
-        <!--placeholder="密码" required="" name="password"-->
-        <!--autocomplete="off" onfocus="this.type='password'" onkeypress="CheckIsEnter(event)">-->
-        <!--</div>-->
-        <!--</div>-->
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <img src="./assets/image/icon_userPwd.png">
+                        </div>
+                        <input v-model="userPwd" type="password" class="form-control" maxlength="32"
+                               placeholder="密码" required="" autocomplete="off"
+                               @click.enter="submitSignin">
+                    </div>
+                </div>
 
-        <!--<div class="form-group captcha_container" style="">-->
+                <div class="form-group captcha_container" style="">
 
-        <!--<div class="input-group">-->
-        <!--<div class="input-group-addon">-->
-        <!--<img src="./assets/image/icon_userPwd.png">-->
-        <!--</div>-->
-        <!--<input id="" type="text" class="form-control" maxlength="20"-->
-        <!--placeholder="验证码">-->
-        <!--</div>-->
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <img src="./assets/image/icon_userPwd.png">
+                        </div>
 
-        <!--<div class="imgCode" onclick="CaptchaChange()"></div>-->
-        <!--</div>-->
+                        <input v-model="captcha" type="text" class="form-control" maxlength="20"
+                               placeholder="验证码">
+                    </div>
 
-        <!--<div class="form-group" style="float:left;width:100%;">-->
-        <!--<div class="col-xs-6 " style="">-->
-        <!--<div class="checkbox pwd_remember">-->
-        <!--<label>-->
-        <!--<input type="checkbox">-->
-        <!--<span>记住用户名</span>-->
-        <!--</label>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="col-xs-6 pwd_modify" style="line-height: 40px;display: none;"-->
-        <!--onclick="pwdModifyModalShow()">-->
-        <!--修改密码-->
-        <!--</div>-->
-        <!--</div>-->
+                    <div class="imgCode" v-on:click="CaptchaChange"></div>
+                </div>
 
-        <!--<button id="submitBtn" type="button" class="btn btn-primary block full-width m-b"-->
-        <!--onclick="submitSignin()" style="width:100%;margin-bottom:10px;">-->
-        <!--登录-->
-        <!--</button>-->
+                <div class="form-group" style="float:left;width:100%;">
+                    <div class="col-xs-6" style="">
+                        <div class="checkbox pwd_remember">
+                            <label>
+                                <input type="checkbox" v-model="name_remember">
+                                <span>记住用户名</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--<div class="col-xs-6 pwd_modify" style="line-height: 40px;display: none;"-->
+                    <!--onclick="pwdModifyModalShow()">-->
+                    <!--修改密码-->
+                    <!--</div>-->
+                </div>
 
-        <!--</form>-->
+                <button id="submitBtn" type="button" class="btn btn-primary block full-width m-b"
+                        onclick="submitSignin()" style="width:100%;margin-bottom:10px;">
+                    登录
+                </button>
 
-        <!--</div>-->
+            </form>
 
-        <!--<footer>-->
-        <!--<div>苏州不木网络科技有限公司版权所有 苏ICP备16004093号-1 版本V2.4</div>-->
-        <!--<div>-->
-        <!--<span>本系统仅支持</span>-->
-        <!--<a title="点击下载Chrome浏览器"-->
-        <!--href="http://www.blueku.com/ChromeStandalone_50.0.2661.102_Setup.exe">Chrome浏览器</a>-->
-        <!--</div>-->
-        <!--</footer>-->
+        </div>
+
+        <footer>
+            <div>苏州不木网络科技有限公司版权所有 苏ICP备16004093号-1 版本V2.4</div>
+            <div>
+                <span>本系统仅支持</span>
+                <a title="点击下载Chrome浏览器"
+                   href="http://www.blueku.com/ChromeStandalone_50.0.2661.102_Setup.exe">Chrome浏览器</a>
+            </div>
+        </footer>
 
     </div>
 
@@ -93,7 +95,7 @@ aaa
 
 <script>
     import $ from 'jquery'
-//    import 'bootstrap/dist/css/bootstrap.min.css'
+    //    import 'bootstrap/dist/css/bootstrap.min.css'
 
     export default {
 
@@ -101,25 +103,36 @@ aaa
         data: () => {
             return {
 
-                class_list: {
-                    index: "col-xs-2"
-                },
-                message: "aaa"
+                userName: "",//用户名称
+                userPwd: "",//用户密码
+                captcha: "",//验证码
+                name_remember: true,//是否记住密码
 
             }
         },
         created: function () {
 
-            this.pageInit();//页面 样式初始化
-            var userName = localStorage.getItem("userLogin_name");
-            //var userPwd = localStorage.getItem("userLogin_pwd");
+            this.userName = localStorage.getItem("userLogin_name");
 
-            if (userName == "" || userName == null) {
+            if (this.userName) {
+                this.name_remember = true;
             }
-            else {
-                $("#userName").val(userName);
-                //$("#password").val(userPwd).focus();
-                $(".pwd_remember").find("input").attr("checked", "checked")
+
+
+        },
+        mounted: function () {
+            this.pageInit();//页面 样式初始化
+        },
+        watch: {
+
+            //监听用户名称修改，实时获取验证码
+            userName: function () {
+                this.CaptchaChange()
+            },
+
+            //监听密码，当按下enter时
+            userPwd: function () {
+
             }
 
         },
@@ -139,6 +152,7 @@ aaa
                 var pBtm = parseInt($(".content form").css("padding-bottom"));//form 表单padding-bottom
                 var top = (height - $(".content form").height() - (pTop + pBtm)) / 2;
                 $(".content form").css("top", top);
+
             },
 
             //enter键 登录
@@ -150,8 +164,11 @@ aaa
             },
 
             //登录
-            submitSignin: function () {
+            submitSignin: function (event) {
+                alert(event.keyCode);
 
+//                alert("登录")
+                return
                 var login_name = $.trim($("#userName").val());
                 var login_pwd = $.trim($("#password").val());
 
@@ -219,10 +236,10 @@ aaa
 
             // 点击 更改验证码
             CaptchaChange: function () {
-                var user_name = $.trim($("#userName").val());
-                if (user_name == "") {
-                    return
-                }
+                console.log(this.userName)
+
+
+                return
 
                 var obj = new Object();
                 obj.account = user_name;
@@ -321,7 +338,6 @@ aaa
         width: 100%;
         background: url("./assets/image/login_bg4.png") no-repeat;
         background-size: 100% 100%;
-        height: 400px;
     }
 
     .content form {
