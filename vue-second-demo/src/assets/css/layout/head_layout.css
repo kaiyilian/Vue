@@ -1,78 +1,79 @@
 
 #head_layout {
-	position: fixed;
-	width: 100%;
-	height: 75px;
-	top: 0;
-	left: 0;
-	margin: 0;
-	background-color: #fff;
-	/*box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.15);*/
-	z-index: 1030;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: #fff;
+    /*box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.15);*/
+    z-index: 1030;
 }
 
 #head_layout .logo {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	top: 11px;
-	left: 30px;
-	z-index: 1;
-	cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 11px;
+    left: 30px;
+    z-index: 1;
+    cursor: pointer;
 }
 
 #head_layout > .txt {
-	position: relative;
-	width: 100%;
-	line-height: 74px;
-	font-size: 20px;
-	color: #242a30;
-	padding: 0 100px;
+    position: relative;
+    width: 100%;
+    line-height: 74px;
+    font-size: 20px;
+    color: #242a30;
+    padding: 0 100px;
 }
 
 #head_layout .user_info {
-	position: absolute;
-	right: 25px;
-	top: 0;
-	height: 100%;
-	padding: 25px 0;
-	color: #242a30;
-	line-height: 25px;
+    position: absolute;
+    right: 25px;
+    top: 0;
+    height: 100%;
+    padding: 25px 0;
+    color: #242a30;
+    line-height: 25px;
 }
 
 #head_layout .user_info .icon_message {
-	width: 22px;
-	height: 19px;
-	float: left;
-	margin: 3px 8px 3px 3px ;
-	background: url("../../../image/icon_contract/icon_message.png") no-repeat;
-	background-size: contain;
-	cursor: pointer;
+    width: 22px;
+    height: 19px;
+    float: left;
+    margin: 3px 8px 3px 3px;
+    background: url("../../image/icon_contract/icon_message.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
 }
+
 #head_layout .user_info .icon_user_head {
-	width: 18px;
-	height: 18px;
-	float: left;
-	margin: 3px;
-	background: url("../../../image/icon_navbar/icon_navbar.png") no-repeat -21px 0;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin: 3px;
+    background: url("../../image/icon_navbar/icon_navbar.png") no-repeat -21px 0;
 }
 
 #head_layout .user_info span {
-	display: block;
-	float: left;
+    display: block;
+    float: left;
 }
 
 #head_layout .user_info span img {
-	width: 18px;
-	height: 18px;
-	float: left;
-	margin: 3px;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin: 3px;
 }
 
 #head_layout .user_info .pwd_modify_container,
 #head_layout .user_info .login_out_container {
-	cursor: pointer;
-	margin-left: 5px;
+    cursor: pointer;
+    margin-left: 5px;
 }
 
 /* 弹框 */
@@ -81,12 +82,12 @@
 }
 
 .pwd_modify_modal .modal-body .row {
-	margin-left: 0;
-	margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .pwd_modify_modal .modal-body .row .col-xs-2 {
-	padding: 0;
-	text-align: center;
-	line-height: 34px;
+    padding: 0;
+    text-align: center;
+    line-height: 34px;
 }

@@ -173,7 +173,7 @@ h3, h4, h5 {
 
 .nav-header {
     padding: 33px 25px;
-    background: url(patterns/header-profile.png) no-repeat
+    /*background: url(patterns/header-profile.png) no-repeat*/
 }
 
 .nav > li.active {
@@ -373,7 +373,7 @@ body.mini-navbar .navbar-static-side {
 }
 
 body.mini-navbar .nav-label, body.mini-navbar .navbar-default .nav li a span, body.mini-navbar .profile-element {
-    display: none
+    display: none!important;
 }
 
 body.canvas-menu .profile-element {
@@ -2891,7 +2891,7 @@ body, body.full-height-layout #page-wrapper, body.full-height-layout #wrapper, h
 }
 
 body.boxed-layout {
-    background: url(patterns/shattered.png)
+    /*background: url(patterns/shattered.png)*/
 }
 
 body.boxed-layout #wrapper {
@@ -6272,7 +6272,7 @@ body.rtls .top-navigation #page-wrapper, body.rtls .top-navigation .footer.fixed
 
 .blue-skin {
     font-weight: 600;
-    background: url(patterns/header-profile-skin-1.png) repeat scroll 0 0
+    /*background: url(patterns/header-profile-skin-1.png) repeat scroll 0 0*/
 }
 
 .blue-skin:hover {
@@ -6281,7 +6281,7 @@ body.rtls .top-navigation #page-wrapper, body.rtls .top-navigation .footer.fixed
 
 .yellow-skin {
     font-weight: 600;
-    background: url(patterns/header-profile-skin-3.png) repeat scroll 0 100%
+    /*background: url(patterns/header-profile-skin-3.png) repeat scroll 0 100%*/
 }
 
 .yellow-skin:hover {
@@ -6328,7 +6328,7 @@ body.rtls .top-navigation #page-wrapper, body.rtls .top-navigation .footer.fixed
 
 .skin-1 .nav-header {
     background: #0e9aef;
-    background: url(patterns/header-profile-skin-1.png)
+    /*background: url(patterns/header-profile-skin-1.png)*/
 }
 
 .skin-1.mini-navbar .nav-second-level {
@@ -6470,7 +6470,7 @@ body.boxed-layout.skin-3 #wrapper {
 
 .skin-3 .nav-header {
     background: #ecba52;
-    background: url(patterns/header-profile-skin-3.png)
+    /*background: url(patterns/header-profile-skin-3.png)*/
 }
 
 .skin-3.mini-navbar .nav-second-level {

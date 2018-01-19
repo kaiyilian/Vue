@@ -13,7 +13,6 @@
             </div>
         </header>
 
-
         <div class="content">
 
             <form class="m-t" role="form" method="post" action="">
@@ -26,7 +25,7 @@
                         </div>
                         <input v-model="userName" type="text" class="form-control"
                                placeholder="用户名" required="" maxlength="18"
-                               autocomplete="off">
+                               autocomplete="off" v-on:blur.prevent="CaptchaChange">
                     </div>
                 </div>
 
@@ -38,7 +37,7 @@
                         </div>
                         <input v-model="userPwd" type="password" class="form-control" maxlength="32"
                                placeholder="密码" required="" autocomplete="off"
-                               @click.enter="submitSignin">
+                               v-on:keypress="CheckIsEnter">
                     </div>
                 </div>
 
@@ -71,8 +70,9 @@
                     <!--</div>-->
                 </div>
 
-                <button id="submitBtn" type="button" class="btn btn-primary block full-width m-b"
-                        onclick="submitSignin()" style="width:100%;margin-bottom:10px;">
+                <button id="submitBtn" type="button"
+                        class="btn btn-primary block full-width m-b"
+                        @click="submitSignin" style="width:100%;margin-bottom:10px;">
                     登录
                 </button>
 
@@ -94,12 +94,11 @@
 </template>
 
 <script>
-    import $ from 'jquery'
-    //    import 'bootstrap/dist/css/bootstrap.min.css'
+    // import $ from 'jquery'
 
     export default {
 
-        name: "login",
+        name: "Login",
         data: () => {
             return {
 
@@ -112,9 +111,13 @@
         },
         created: function () {
 
+            //查看是否记住用户名
             this.userName = localStorage.getItem("userLogin_name");
 
             if (this.userName) {
+                this.name_remember = true;
+            }
+            else {
                 this.name_remember = true;
             }
 
@@ -123,29 +126,18 @@
         mounted: function () {
             this.pageInit();//页面 样式初始化
         },
-        watch: {
-
-            //监听用户名称修改，实时获取验证码
-            userName: function () {
-                this.CaptchaChange()
-            },
-
-            //监听密码，当按下enter时
-            userPwd: function () {
-
-            }
-
-        },
+        watch: {},
         methods: {
 
             pageInit: function () {
-
+                $("body").css("padding", 0);
+                $("#wrapper").css("background-color", "transparent");
                 //设置content的高度
                 var w_width = $(window).width();
                 var height = w_width * 5 / 16;//content 高度
                 $(".content").height(height);
 
-                console.log($(window).width());
+                console.log("页面宽度 ------ " + $(window).width());
 
                 //form表单的 css
                 var pTop = parseInt($(".content form").css("padding-top"));//form 表单padding-top
@@ -156,17 +148,20 @@
             },
 
             //enter键 登录
-            CheckIsEnter: function (e) {
-                var k = window.event ? e.keyCode : e.which;
-                if (k == 13) {
-                    submitSignin();
+            CheckIsEnter: function (event) {
+                let k = window.event ? event.keyCode : event.which;
+                console.log("key ------- " + k);
+                if (k === 13) {
+                    this.submitSignin();//登录
                 }
             },
 
             //登录
-            submitSignin: function (event) {
-                alert(event.keyCode);
-
+            submitSignin: function () {
+                console.log("login..........");
+                console.log(this.$route)
+                this.$router.push({path: 'main'})
+                console.log(this.$route)
 //                alert("登录")
                 return
                 var login_name = $.trim($("#userName").val());
@@ -236,7 +231,7 @@
 
             // 点击 更改验证码
             CaptchaChange: function () {
-                console.log(this.userName)
+                console.log("用户名称 ------- " + this.userName);
 
 
                 return
@@ -281,8 +276,13 @@
 
 <style scoped>
 
+    /*$light:red*/
+
     .login_bg {
-        width: 100%;
+        width: 100% !important;//
+        margin: 0;
+        max-width: inherit;
+        padding: 0;
     }
 
     header {
